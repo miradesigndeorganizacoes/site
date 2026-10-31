@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.miradesigndeorganizacoes.com.br/sitemap.xml

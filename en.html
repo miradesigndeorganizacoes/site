@@ -1,0 +1,1188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MIRÁ | Organization Design</title>
+<meta name="description" content="Consulting, facilitation and training for organizations that want to transform from within. Organization Design®: 7 dimensions, one continuous spiral. Based in Brasília, working across Brazil.">
+<link rel="canonical" href="https://www.miradesigndeorganizacoes.com.br/en.html">
+<link rel="alternate" hreflang="pt-BR" href="https://www.miradesigndeorganizacoes.com.br/">
+<link rel="alternate" hreflang="en" href="https://www.miradesigndeorganizacoes.com.br/en.html">
+<link rel="alternate" hreflang="x-default" href="https://www.miradesigndeorganizacoes.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MIRÁ | Design de Organizações">
+<meta property="og:title" content="MIRÁ | Organization Design">
+<meta property="og:description" content="Consulting, facilitation and training for organizations that want to transform from within. Organization Design®: 7 dimensions, one continuous spiral. Based in Brasília, working across Brazil.">
+<meta property="og:url" content="https://www.miradesigndeorganizacoes.com.br/en.html">
+<meta property="og:image" content="https://www.miradesigndeorganizacoes.com.br/img/og-en.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/icon-180.png">
+<meta name="theme-color" content="#00BAC0">
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Rock+Salt&display=swap">
+<style>
+/* Layout: identidade MIRÁ 2026 — branco, preto e teal como base; as 7 cores só onde há as 7 dimensões ou os 7 atributos.
+   Títulos em Boldonse caixa-alta, texto em Montserrat, Rock Salt só para a palavra "a gente". Tema único claro, por escolha. */
+:root{
+  --bg:#ffffff; --ink:#111111; --muted:#55585c; --line:#e4e6e6; --soft:#f2f7f7;
+  --teal:#00BAC0; --teal-ink:#00BAC0; /* teal da paleta oficial em todo lugar */
+  --d1:#C9D76A; --d2:#A2BF4A; --d3:#00BAC0; --d4:#0081C3; --d5:#1F509E; --d6:#663C8F; --d7:#883B8D;
+  --f-display:"Boldonse","Arial Black",Impact,sans-serif;
+  --f-body:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --f-hand:"Rock Salt","Comic Sans MS",cursive;
+  --wrap:1180px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{overflow-x:clip;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;text-transform:uppercase;line-height:1.4;letter-spacing:.005em;margin:0;text-wrap:balance}
+h1{font-size:clamp(26px,4.2vw,50px)}
+h2{font-size:clamp(24px,3.4vw,40px)}
+h3{font-size:clamp(15px,1.5vw,18px);line-height:1.45}
+p{margin:0}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-ink)}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:56ch}
+.hand{font-family:var(--f-hand);text-transform:none;color:var(--teal-ink);font-size:.9em;letter-spacing:0}
+:focus-visible{outline:3px solid var(--d4);outline-offset:3px}
+
+/* faixa das 7 cores, a assinatura da identidade */
+.stripe{display:grid;grid-template-columns:repeat(7,1fr);height:8px}
+.stripe i:nth-child(1){background:var(--d1)}.stripe i:nth-child(2){background:var(--d2)}.stripe i:nth-child(3){background:var(--d3)}
+.stripe i:nth-child(4){background:var(--d4)}.stripe i:nth-child(5){background:var(--d5)}.stripe i:nth-child(6){background:var(--d6)}.stripe i:nth-child(7){background:var(--d7)}
+
+/* topo */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:72px}
+.brand img{height:40px;width:auto}
+.nav{display:flex;gap:4px;margin-left:auto;align-items:center}
+.nav a{font-size:13px;font-weight:600;text-decoration:none;padding:8px 10px;border-radius:999px;white-space:nowrap}
+.nav a:hover{background:var(--soft)}
+.nav a[aria-current="page"]{background:var(--ink);color:#fff}
+.lang{display:flex;font-size:12px;font-weight:700;border:1.5px solid var(--ink);border-radius:999px;overflow:hidden;margin-left:8px}
+.lang a{text-decoration:none;padding:5px 10px;color:var(--ink)}
+.lang a[aria-current="true"]{background:var(--ink);color:#fff}
+.menu-btn{display:none;margin-left:auto;border:1.5px solid var(--ink);background:#fff;border-radius:999px;font:600 13px var(--f-body);padding:8px 14px;cursor:pointer;color:var(--ink)}
+@media (max-width:1020px){
+  .menu-btn{display:block}
+  .nav{display:none;position:absolute;left:0;right:0;top:72px;background:#fff;flex-direction:column;align-items:stretch;padding:12px max(20px,env(safe-area-inset-right,0px)) 20px max(20px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line);gap:2px}
+  .nav.open{display:flex}
+  .nav a{font-size:16px;padding:12px 14px}
+  .lang{align-self:flex-start;margin:10px 0 0 6px}
+}
+
+/* botões */
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 14px var(--f-body);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;padding:15px 22px;border-radius:999px;border:2px solid var(--ink);cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--ink);color:#fff}
+.btn.solid:hover{background:var(--teal);border-color:var(--teal);color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.arrow::after{content:"→";font-family:var(--f-body)}
+
+section{padding-block:clamp(56px,8vw,112px)}
+.view[hidden]{display:none!important}
+
+/* HOME — abertura */
+.hero{padding-block:clamp(36px,6vw,80px) clamp(48px,7vw,96px)}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);align-items:center}
+.hero-text{display:grid;gap:26px;min-width:0}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;aspect-ratio:1/1;object-fit:cover;position:relative}
+.blob{transition:transform .5s cubic-bezier(.3,1.4,.5,1)}
+.blob:hover{transform:scale(1.025) rotate(-1deg)}
+/* foto redonda (a mesa já é circular) no centro da espiral oficial do Design de Organizações, que gira devagar em volta */
+.hero-photo{aspect-ratio:1/1}
+.hero-photo .orbit{position:absolute;inset:0;width:100%;height:100%;transform-origin:55% 55%;animation:entra 1.6s cubic-bezier(.2,.7,.2,1) both,spin 120s linear 1.6s infinite}
+.hero-photo .foto{position:absolute;left:33%;top:33%;width:44%;aspect-ratio:1/1;object-fit:cover;border-radius:50%;z-index:1;box-shadow:0 0 0 10px var(--bg)}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes entra{from{opacity:0;transform:rotate(-120deg) scale(.6)}to{opacity:1;transform:none}}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.hero-photo{max-width:460px;margin-inline:auto;width:100%}}
+
+/* a gente */
+.agente{background:var(--soft)}
+.agente .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,80px);align-items:start}
+.agente .big{font-family:var(--f-display);font-size:clamp(28px,4.4vw,54px);line-height:1.4;text-transform:uppercase}
+.agente .big .hand{display:block;font-size:.62em;margin-top:.5em}
+.agente .body{display:grid;gap:18px;min-width:0}
+.proposito{font-weight:700;font-size:20px;border-left:6px solid var(--teal);padding-left:16px}
+@media (max-width:820px){.agente .wrap{grid-template-columns:1fr}}
+
+/* essência */
+.sec-head{display:grid;gap:14px;margin-bottom:clamp(28px,4vw,48px);max-width:760px}
+/* essência: 7 colunas na ordem da faixa colorida do topo; a coluna sob o mouse se abre e mostra o texto */
+.ess{display:flex;gap:6px;height:270px}
+.ess a{flex:1 1 0;min-width:0;position:relative;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--soft);border-top:10px solid var(--c);border-radius:0 0 18px 18px;transition:flex-grow .55s cubic-bezier(.4,.1,.2,1),background .4s}
+.ess a.on{flex-grow:3.4;background:color-mix(in srgb,var(--c) 22%,#fff)}
+.ess .vt{position:absolute;left:50%;bottom:22px;transform:translateX(-50%) rotate(180deg);writing-mode:vertical-rl;font:400 17px var(--f-display);text-transform:uppercase;white-space:nowrap;transition:opacity .25s}
+.ess .open{position:absolute;inset:28px 24px 24px;display:grid;gap:12px;align-content:start;opacity:0;transform:translateY(10px);transition:opacity .3s,transform .4s;pointer-events:none;width:calc(100% - 48px);min-width:230px}
+.ess .open h3{font-size:20px}
+.ess .open p{font-size:15.5px;line-height:1.55;color:#2b2e30}
+.ess a.on .vt{opacity:0}
+.ess a.on .open{opacity:1;transform:none;transition-delay:.2s}
+@media (max-width:900px),(hover:none){
+  .ess{flex-direction:column;height:auto;gap:10px}
+  .ess a{border-top:0;border-left:10px solid var(--c);border-radius:0 18px 18px 0;background:color-mix(in srgb,var(--c) 14%,#fff)}
+  .ess .vt{display:none}
+  .ess .open{position:static;opacity:1;transform:none;padding:18px 20px;width:auto;min-width:0}
+}
+
+/* chamada para o Design de Organizações na Home: a espiral oficial e as 7 dimensões nas cores da paleta */
+.do-home{background:var(--soft)}
+.do-home .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,80px);align-items:center}
+.do-art img{width:100%;max-width:520px;margin-inline:auto;animation:spin 140s linear infinite;transform-origin:55% 55%}
+.do-txt{display:grid;gap:22px;min-width:0}
+.dims7{list-style:none;margin:0;padding:0;display:grid;gap:2px;counter-reset:d}
+.dims7 li{font:400 clamp(17px,2vw,24px)/1.45 var(--f-display);text-transform:uppercase;color:var(--c)}
+@media (max-width:820px){.do-home .wrap{grid-template-columns:1fr}.do-art img{max-width:340px}}
+/* galeria: fotos retangulares passando devagar; pausa ao passar o mouse */
+.galeria{padding-bottom:clamp(40px,6vw,80px)}
+.trilho{overflow:hidden;padding-block:8px}
+.trilho:focus-visible{outline:3px solid var(--d4);outline-offset:-3px}
+.faixa{display:flex;gap:clamp(14px,2vw,28px);width:max-content;animation:passa 90s linear infinite}
+.faixa .dup{display:contents}
+.trilho:hover .faixa,.trilho:focus .faixa{animation-play-state:paused}
+.faixa img{height:clamp(220px,30vw,380px);width:auto;max-width:none;flex:none} /* cada foto no formato original, sem corte */
+@keyframes passa{to{transform:translateX(calc(-50% - clamp(7px,1vw,14px)))}}
+@media (prefers-reduced-motion:reduce){.trilho{overflow-x:auto}.faixa .dup{display:none}}
+/* serviços */
+.servicos .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.4vw,32px)}
+.serv{display:grid;grid-template-rows:auto auto 1fr auto;gap:14px;min-width:0}
+.serv img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.serv h3{font-size:clamp(20px,2.1vw,26px)}
+.serv .tag{font-family:var(--f-hand);font-size:15px;color:var(--teal-ink)}
+.serv p{color:var(--muted);font-size:16px}
+.serv a{font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;border-bottom:2px solid var(--teal);justify-self:start;padding-bottom:2px}
+@media (max-width:860px){.servicos .grid3{grid-template-columns:1fr}.serv img{aspect-ratio:16/9}}
+
+/* números */
+.numeros{background:var(--ink);color:#fff}
+.numeros .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.num{display:grid;gap:6px;border-top:3px solid var(--teal);padding-top:18px}
+.num b{font-family:var(--f-display);font-weight:400;font-size:clamp(34px,5.4vw,68px);line-height:1.1;font-variant-numeric:tabular-nums}
+.num span{font-size:15px;color:#cfd3d3}
+@media (max-width:700px){.numeros .wrap{grid-template-columns:1fr}}
+
+/* logos */
+.logos .row{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:22px 28px;align-items:center}
+.logos .row img{max-height:52px;max-width:100%;width:auto;margin-inline:auto;filter:grayscale(1);opacity:.75;transition:filter .3s,opacity .3s}
+.logos .row img:hover{filter:none;opacity:1}
+.setores{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.setores button{font:600 13px var(--f-body);padding:7px 14px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:background .2s,border-color .2s}
+.setores button:hover{border-color:var(--ink)}
+.setores button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.logos .row img{animation:fadein .4s ease}
+@keyframes fadein{from{opacity:0;transform:translateY(6px)}}
+.logos .vazio{grid-column:1/-1;color:var(--muted);font-size:15px}
+
+/* depoimentos: carrossel com as frases dos slides 71 e 85 da apresentação; troca sozinho e pausa ao passar o mouse */
+.quote{position:relative;overflow:hidden}
+.quote .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,56px);align-items:center}
+.quote img{width:clamp(160px,24vw,300px);aspect-ratio:1;object-fit:cover}
+.depo{min-width:0;display:grid;gap:22px}
+.depo-track{display:grid}
+.depo-track blockquote{grid-area:1/1;margin:0;font-family:var(--f-hand);font-size:clamp(16px,1.7vw,22px);line-height:1.8;opacity:0;transform:translateY(12px);transition:opacity .5s,transform .5s;pointer-events:none}
+.depo-track blockquote.on{opacity:1;transform:none;pointer-events:auto}
+.depo-track blockquote::before{content:"“";color:var(--teal);display:block;font-size:2em;line-height:.6}
+.depo-track cite{display:block;margin-top:16px;font:500 15px var(--f-body);color:var(--muted);font-style:normal;text-transform:none}
+.depo-nav{display:flex;align-items:center;gap:14px}
+.depo-nav button{width:42px;height:42px;border-radius:50%;border:2px solid var(--ink);background:#fff;font:700 16px var(--f-body);cursor:pointer;color:var(--ink);transition:background .2s,color .2s}
+.depo-nav button:hover{background:var(--ink);color:#fff}
+.depo-dots{display:flex;gap:8px;flex-wrap:wrap}
+.depo-dots button{width:12px;height:12px;padding:0;border-radius:50%;border:2px solid var(--ink);background:#fff;cursor:pointer}
+.depo-dots button[aria-selected="true"]{background:var(--teal);border-color:var(--teal)}
+@media (max-width:640px){.quote .wrap{grid-template-columns:1fr}}
+/* chamada final + rodapé */
+.cta{background:var(--teal)}
+.cta .wrap{display:grid;gap:26px;justify-items:start}
+.cta h2{max-width:18ch}
+.cta .btn.solid:hover{background:#fff;border-color:#fff}
+footer{background:var(--ink);color:#e7eaea;padding-block:56px 40px;font-size:15px}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px}
+footer img{height:40px;width:auto;margin-bottom:14px}
+footer h4{font:700 12px var(--f-body);letter-spacing:.16em;text-transform:uppercase;margin:0 0 10px;color:var(--teal)}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+footer a{text-decoration:none}
+footer a:hover{text-decoration:underline}
+.copy{user-select:all}
+.redes{display:flex;gap:10px;flex-wrap:wrap}
+.redes a{width:46px;height:46px;border-radius:50%;border:1.5px solid #444;display:grid;place-items:center;color:#e7eaea;transition:background .2s,border-color .2s,color .2s,transform .2s}
+.redes a[href]:hover{background:var(--teal);border-color:var(--teal);color:var(--ink);transform:translateY(-2px)}
+.redes svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.redes svg .f{fill:currentColor;stroke:none}
+.legal{margin-top:36px;padding-top:20px;border-top:1px solid #333;font-size:13px;color:#9aa0a0;grid-column:1/-1}
+@media (max-width:760px){footer .wrap{grid-template-columns:1fr}}
+
+/* DESIGN DE ORGANIZAÇÕES */
+.do-hero .wrap{display:grid;gap:22px;max-width:900px}
+.do-hero h1 .hand{display:inline}
+.espiral{padding-block:0 clamp(56px,8vw,112px)}
+.espiral .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:start}
+.spiral-box{position:sticky;top:calc(env(safe-area-inset-top,0px) + 96px)}
+/* como no vídeo da apresentação: o símbolo vira espiral; a cada dimensão a "câmera" se afasta do centro e revela a próxima bolinha */
+.spiral-art{position:relative;overflow:hidden;aspect-ratio:1/1}
+.cam{position:absolute;inset:0;transform-origin:55% 55%;transition:transform 1.5s cubic-bezier(.65,0,.25,1)}
+.cam .sp{display:block;width:100%;transition:opacity .9s}
+.spiral-art.zoom .cam .sp{opacity:.2}
+.cam svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.simbolo{position:absolute;left:30%;top:30%;width:50%;pointer-events:none;opacity:0}
+.node{transition:opacity .5s}
+.node.off{opacity:0!important;pointer-events:none}
+.lista7{display:grid;gap:2px;margin:0;padding:0;list-style:none}
+.lista7 button{font:400 clamp(18px,2.2vw,26px)/1.45 var(--f-display);text-transform:uppercase;background:none;border:0;padding:0;cursor:pointer;color:var(--c);text-align:left}
+.lista7 button:hover{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:4px}
+.node circle.dot{transform-box:fill-box;transform-origin:center}
+.node{cursor:pointer}
+.node circle.dot{stroke:var(--ink);stroke-width:.5;transition:r .35s cubic-bezier(.3,1.6,.5,1)}
+.node circle.halo{fill:none;stroke-width:.6;opacity:0;transition:opacity .3s,r .4s}
+.node text{font:400 3px var(--f-display);paint-order:stroke;stroke:#fff;stroke-width:.8px;text-transform:uppercase;fill:var(--ink);opacity:0;transition:opacity .3s;pointer-events:none}
+.node.on circle.halo{opacity:.9}
+.node.on text,.node:hover text,.node:focus-visible text{opacity:1}
+.node:focus{outline:none}
+.node:focus-visible circle.dot{stroke:var(--d4);stroke-width:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;justify-content:center}
+.chips button{font:600 13px var(--f-body);border:2px solid var(--c);background:#fff;color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer;transition:background .2s}
+.chips button[aria-pressed="true"]{background:var(--c);color:var(--on,var(--ink))}
+.panel{min-width:0;border:2px solid var(--ink);border-radius:26px;padding:clamp(22px,3vw,40px);display:grid;gap:18px;background:#fff;box-shadow:10px 10px 0 var(--c,var(--teal));transition:box-shadow .4s}
+.panel .n{font:700 12px var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.panel h2{font-size:clamp(26px,3vw,38px)}
+.panel h2 i{display:inline-block;width:.7em;height:.7em;border-radius:50%;background:var(--c);border:2px solid var(--ink);margin-right:.35em;vertical-align:.05em}
+.panel .txt{display:grid;gap:14px;color:#2b2e30;font-size:16.5px}
+.panel .txt b{font-weight:700;color:var(--ink)}
+.panel .q{font-family:var(--f-hand);font-size:clamp(16px,1.6vw,19px);line-height:1.7;color:var(--ink);background:var(--soft);border-radius:16px;padding:16px 18px}
+.panel .nav2{display:flex;justify-content:space-between;gap:12px}
+.panel .nav2 button{font:700 13px var(--f-body);text-transform:uppercase;letter-spacing:.06em;background:none;border:0;cursor:pointer;color:var(--ink);padding:6px 0}
+.panel.swap{animation:swap .45s ease}
+@keyframes swap{from{opacity:.2;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (max-width:860px){
+  .espiral .wrap{grid-template-columns:1fr}
+  .spiral-box{position:relative;top:0;max-width:440px;margin-inline:auto;width:100%}
+}
+.inspira .cloud{display:flex;flex-wrap:wrap;gap:10px}
+.inspira .cloud span{font-size:15px;font-weight:500;padding:8px 16px;border-radius:999px;background:var(--soft);border:1.5px solid transparent;transition:border-color .2s}
+.inspira .cloud span:nth-child(7n+1):hover{border-color:var(--d1)}.inspira .cloud span:nth-child(7n+2):hover{border-color:var(--d2)}
+.inspira .cloud span:nth-child(7n+3):hover{border-color:var(--d3)}.inspira .cloud span:nth-child(7n+4):hover{border-color:var(--d4)}
+.inspira .cloud span:nth-child(7n+5):hover{border-color:var(--d5)}.inspira .cloud span:nth-child(7n+6):hover{border-color:var(--d6)}
+.inspira .cloud span:nth-child(7n){border-color:transparent}.inspira .cloud span:nth-child(7n):hover{border-color:var(--d7)}
+
+
+/* páginas internas */
+.blocos .wrap{display:grid;gap:clamp(48px,7vw,96px)}
+.bloco{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,64px);align-items:center}
+.bloco:nth-child(even) img{order:2}
+.bloco img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.bloco-txt{display:grid;gap:18px;min-width:0}
+.bloco-txt .txt{display:grid;gap:12px;color:#2b2e30}
+.bloco-txt h2{font-size:clamp(22px,2.8vw,34px)}
+.cases ul{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.cases li{font-size:13.5px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--soft);border:1.5px solid var(--line)}
+.tabela table{border-collapse:collapse;width:100%;max-width:520px;font-size:15px}
+.tabela th,.tabela td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+.tabela th{font:700 12px var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tabela td:first-child{font-weight:700}
+.nota{font-size:14px;color:var(--muted);margin-top:10px}
+.depo-one{margin:0;font-family:var(--f-hand);font-size:clamp(16px,1.7vw,22px);line-height:1.8;max-width:42ch}
+.depo-one::before{content:"\201C";color:var(--teal);display:block;font-size:2em;line-height:.6}
+.depo-one cite{display:block;margin-top:16px;font:500 15px var(--f-body);color:var(--muted);font-style:normal;text-transform:none}
+.passos{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+.passos li{border-top:8px solid var(--c);padding:14px 4px 0;display:grid;gap:6px;font-size:14px;line-height:1.4}
+.passos b{font:400 26px var(--f-display);color:var(--c)}
+.nums3{grid-template-columns:repeat(3,1fr)}
+.nums3>div{display:grid;gap:18px}
+.nums3 .eyebrow{color:var(--teal)}
+.fit-nums{display:flex;gap:28px}
+.fit-nums b{display:block;font:400 clamp(26px,3vw,40px)/1.2 var(--f-display)}
+.fit-nums span{font-size:14px;color:var(--muted)}
+.ess-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.ess-full{border-top:10px solid var(--c);background:var(--soft);border-radius:0 0 18px 18px;padding:22px 22px 26px;display:grid;gap:10px;align-content:start}
+.ess-full h3{font-size:20px}
+.ess-full p{font-size:15px;line-height:1.6;color:#2b2e30}
+.ess-full a{font-weight:700}
+.socias-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,64px)}
+.socia{display:grid;gap:10px;align-content:start}
+.socia img{width:100%;max-width:300px;aspect-ratio:1/1;object-fit:contain;margin-bottom:10px}
+.socia h3{font-size:clamp(20px,2.2vw,28px)}
+.socia .tag{font-family:var(--f-hand);font-size:15px;color:var(--teal)}
+.socia p{font-size:15.5px;color:#2b2e30}
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:start}
+.duas h2{margin-bottom:18px}
+.linha{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.linha li{display:grid;grid-template-columns:72px 1fr;gap:14px;align-items:baseline;border-left:3px solid var(--teal);padding-left:16px}
+.linha b{font:400 22px var(--f-display)}
+.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.4vw,32px)}
+.case{display:grid;gap:14px;border-top:10px solid var(--c);padding-top:16px}
+.case img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.case-txt{display:grid;gap:8px}
+.case-txt h3{font-size:19px}
+.case-txt p{font-size:15px;color:#2b2e30}
+.case-txt .eyebrow{color:var(--muted)}
+.form{display:grid;gap:16px}
+.form label{display:grid;gap:6px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.form input,.form textarea{font:400 16px var(--f-body);padding:12px 14px;border:2px solid var(--ink);border-radius:12px;background:#fff;color:var(--ink)}
+.form textarea{resize:vertical}
+.form .btn{border:2px solid var(--ink)}
+.dados h4{font:700 12px var(--f-body);letter-spacing:.16em;text-transform:uppercase;margin:0 0 6px;color:var(--teal)}
+.dados p{margin-bottom:20px}
+.redes.dark a{border-color:var(--ink);color:var(--ink)}
+.redes.dark a[href]:hover{color:var(--ink)}
+@media (max-width:860px){
+  .bloco,.socias-grid,.duas,.cases-grid{grid-template-columns:1fr}
+  .bloco:nth-child(even) img{order:0}
+  .bloco img{max-width:420px}
+  .passos{grid-template-columns:repeat(2,1fr)}
+  .nums3{grid-template-columns:1fr}
+}
+/* páginas ainda não prototipadas */
+.proto{background:var(--ink);color:#fff;font-size:12.5px;text-align:center;padding:7px 16px;font-weight:500}
+.proto b{color:var(--teal)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><clipPath id="blob1" clipPathUnits="objectBoundingBox"><path d="M 0.0429 0.2865 C 0.0146 0.3791 0.0271 0.4784 0.0179 0.5736 C 0.0053 0.7036 -0.0355 0.8451 0.0736 0.9375 C 0.2083 1.0514 0.4142 0.9819 0.5993 0.9453 C 0.7190 0.9216 0.8531 0.9134 0.9342 0.8339 C 1.0312 0.7391 1.0032 0.6076 0.9625 0.4858 C 0.9198 0.3576 0.8734 0.2081 0.7368 0.1010 C 0.6562 0.0377 0.5566 0.0004 0.4528 0.0000 C 0.2592 -0.0005 0.0941 0.1192 0.0429 0.2865Z"/></clipPath><clipPath id="blob2" clipPathUnits="objectBoundingBox"><path d="M 0.0154 0.2780 C -0.0218 0.4318 0.0030 0.6217 0.1452 0.7810 C 0.2771 0.9288 0.4689 1.0157 0.6457 0.9977 C 0.7786 0.9843 0.8783 0.9166 0.9431 0.8127 C 1.0054 0.7128 1.0084 0.6002 0.9907 0.4942 C 0.9680 0.3572 0.9084 0.2248 0.7865 0.1321 C 0.7044 0.0695 0.6009 0.0347 0.4949 0.0144 C 0.4121 -0.0015 0.3255 -0.0087 0.2445 0.0164 C 0.1117 0.0575 0.0444 0.1582 0.0154 0.2780Z"/></clipPath><clipPath id="blob3" clipPathUnits="objectBoundingBox"><path d="M 0.0984 0.1145 C -0.0267 0.2089 -0.0035 0.3619 0.0136 0.5010 C 0.0295 0.6307 0.0355 0.7688 0.1435 0.8658 C 0.2505 0.9620 0.4173 0.9829 0.5762 0.9951 C 0.6821 1.0032 0.7947 1.0075 0.8810 0.9569 C 1.0619 0.8512 0.9834 0.6461 0.9816 0.4659 C 0.9803 0.3326 1.0309 0.1857 0.9217 0.0822 C 0.7963 -0.0364 0.5790 -0.0006 0.3843 0.0294 C 0.2825 0.0450 0.1746 0.0570 0.0984 0.1145Z"/></clipPath><clipPath id="blob5" clipPathUnits="objectBoundingBox"><path d="M 0.1966 0.0729 C 0.1277 0.1158 0.0813 0.1783 0.0497 0.2454 C -0.0195 0.3922 -0.0188 0.5571 0.0658 0.6977 C 0.1610 0.8560 0.3462 0.9588 0.5533 0.9916 C 0.6694 1.0100 0.7954 1.0022 0.8730 0.9290 C 0.9630 0.8443 0.9378 0.7206 0.9327 0.6070 C 0.9311 0.5702 0.9321 0.5332 0.9407 0.4971 C 0.9562 0.4323 0.9956 0.3722 0.9996 0.3061 C 1.0057 0.2035 0.9391 0.1158 0.8374 0.0630 C 0.7392 0.0118 0.6231 -0.0007 0.5123 0.0000 C 0.4029 0.0008 0.2896 0.0151 0.1966 0.0729Z"/></clipPath><clipPath id="blob7" clipPathUnits="objectBoundingBox"><path d="M 0.5597 0.0017 C 0.3528 0.0167 0.1476 0.0893 0.0514 0.2488 C -0.0342 0.3907 -0.0062 0.5607 0.0851 0.7013 C 0.1852 0.8556 0.3539 0.9687 0.5534 0.9950 C 0.6623 1.0093 0.7764 0.9947 0.8604 0.9325 C 0.9698 0.8515 0.9981 0.7126 0.9178 0.6106 C 0.8927 0.5787 0.8566 0.5518 0.8492 0.5133 C 0.8328 0.4292 0.9444 0.3835 0.9820 0.3099 C 1.0668 0.1438 0.8399 -0.0187 0.5597 0.0017Z"/></clipPath><clipPath id="blob10" clipPathUnits="objectBoundingBox"><path d="M 0.0299 0.2784 C 0.0171 0.3761 0.0758 0.4739 0.0668 0.5724 C 0.0537 0.7154 -0.0734 0.8733 0.0615 0.9659 C 0.2259 1.0789 0.3900 0.8768 0.5628 0.8723 C 0.6536 0.8700 0.7422 0.9225 0.8359 0.9017 C 1.0184 0.8614 1.0252 0.6703 0.9689 0.4887 C 0.9278 0.3556 0.8935 0.1878 0.7385 0.0824 C 0.6591 0.0284 0.5652 0.0039 0.4713 0.0004 C 0.2616 -0.0076 0.0542 0.0954 0.0299 0.2784Z"/></clipPath><clipPath id="blob11" clipPathUnits="objectBoundingBox"><path d="M 0.0058 0.2785 C -0.0197 0.4590 0.0360 0.6814 0.2377 0.8400 C 0.4942 1.0417 0.8600 1.0649 0.9619 0.8400 C 1.0118 0.7298 0.9461 0.6163 0.9491 0.5070 C 0.9531 0.3631 1.0598 0.2093 0.9521 0.0928 C 0.8430 -0.0250 0.6449 0.0363 0.4759 0.0223 C 0.3973 0.0158 0.3198 -0.0093 0.2419 0.0037 C 0.0970 0.0280 0.0247 0.1461 0.0058 0.2785Z"/></clipPath><clipPath id="blob13" clipPathUnits="objectBoundingBox"><path d="M 0.1152 0.3028 C 0.0523 0.3864 0.0216 0.4850 0.0069 0.5832 C -0.0143 0.7261 0.0079 0.8795 0.1468 0.9559 C 0.2548 1.0152 0.3872 0.9984 0.5115 0.9961 C 0.6367 0.9938 0.7772 1.0009 0.8561 0.9165 C 0.9686 0.7965 0.8456 0.6423 0.8686 0.4982 C 0.8904 0.3610 1.0645 0.2290 0.9742 0.0915 C 0.9000 -0.0217 0.7185 -0.0150 0.5632 0.0318 C 0.3867 0.0851 0.2179 0.1668 0.1152 0.3028Z"/></clipPath><clipPath id="blob14" clipPathUnits="objectBoundingBox"><path d="M 0.0033 0.2728 C -0.0098 0.3783 0.0156 0.4922 0.0698 0.6018 C 0.1071 0.6772 0.1581 0.7531 0.2335 0.8204 C 0.3833 0.9541 0.5852 1.0275 0.7664 0.9907 C 0.8851 0.9667 0.9768 0.8970 0.9967 0.7932 C 1.0166 0.6884 0.9416 0.5945 0.9395 0.4956 C 0.9361 0.3431 1.0757 0.1668 0.9209 0.0691 C 0.8351 0.0149 0.7232 0.0547 0.6209 0.0536 C 0.4916 0.0522 0.3694 -0.0191 0.2377 0.0049 C 0.0919 0.0314 0.0196 0.1420 0.0033 0.2728Z"/></clipPath><clipPath id="blob17" clipPathUnits="objectBoundingBox"><path d="M 0.0255 0.5892 C 0.0402 0.6980 0.0452 0.8152 0.1143 0.8973 C 0.2542 1.0638 0.4790 0.9879 0.6635 0.9458 C 0.7728 0.9209 0.8892 0.8983 0.9443 0.7922 C 1.0221 0.6423 0.8820 0.4677 0.9314 0.3094 C 0.9535 0.2380 1.0133 0.1762 0.9974 0.1013 C 0.9656 -0.0486 0.7803 0.0037 0.6200 0.0333 C 0.4338 0.0677 0.2161 -0.0359 0.0766 0.1118 C -0.0365 0.2315 0.0025 0.4191 0.0255 0.5892Z"/></clipPath></defs></svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" data-go="inicio" aria-label="MIRÁ, home page"><img src="img/marca.png" alt="MIRÁ Organization Design"></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#a-mira" data-go="a-mira">About MIRÁ</a>
+      <a href="#design" data-go="design">Organization Design®</a>
+      <a href="#consultoria" data-go="consultoria">Consulting</a>
+      <a href="#facilitacao" data-go="facilitacao">Facilitation</a>
+      <a href="#capacitacao" data-go="capacitacao">Training</a>
+      <a href="#portfolio" data-go="portfolio">Portfolio</a>
+      <a href="#contato" data-go="contato">Contact</a>
+      <div class="lang" role="group" aria-label="Language"><a href="index.html" id="langLink" hreflang="pt-BR" lang="pt-BR">PT</a><a href="en.html" aria-current="true" hreflang="en" lang="en">EN</a></div>
+    </nav>
+  </div>
+  <div class="stripe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</header>
+
+<main>
+<!-- ===================== HOME ===================== -->
+<div class="view" id="v-inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="eyebrow">Consulting · Facilitation · Training</span>
+        <h1>The change we want to see in the world starts with <span class="hand">people.</span></h1>
+        <p class="lead">We help organizations, networks and teams transform from within, with handcrafted facilitation, consulting and training, built together with you.</p>
+        <div class="btns">
+          <a class="btn solid arrow" href="#servicos">Explore our services</a>
+          <a class="btn ghost" href="#fale">Talk to us</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img class="foto" src="img/hero.jpg" alt="A team around a round table, seen from above">
+        <img class="orbit" src="img/espiral.png" alt="" aria-hidden="true">
+      </div>
+    </div>
+  </section>
+
+  <section class="agente">
+    <div class="wrap">
+      <p class="big">MIRÁ comes from Tupi-Guarani and means <span class="hand">“we, the people”</span></p>
+      <div class="body">
+        <p>We believe that <strong>human beings</strong> are the catalyst of change, and that the best way to change the world is to strengthen our human systems: <strong>our organizations</strong>.</p>
+        <p>We support the <strong>organizational development</strong> of businesses, institutions and initiatives that pursue prosperity without giving up on <strong>generating a positive impact on the human, environmental and cultural ecosystem</strong>. Organizations that want to balance results with care for relationships, and find happiness at work.</p>
+        <p class="proposito">Our purpose is to co-create the planet we dream of.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="essencia">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The essence of MIRÁ</h2>
+      </div>
+      <div class="ess" id="ess">
+        <a class="on" href="#a-mira" data-go="a-mira" style="--c:var(--d1)"><span class="vt">Human</span><div class="open"><h3>Human</h3><p>Light, warm and welcoming environments, where people feel free to express themselves, make mistakes, laugh and connect.</p></div></a>
+        <a href="#a-mira" data-go="a-mira" style="--c:var(--d2)"><span class="vt">Deep</span><div class="open"><h3>Deep</h3><p>Lightness with rigor. Small groups, real conversations, and every activity serving a real goal.</p></div></a>
+        <a href="#a-mira" data-go="a-mira" style="--c:var(--d3)"><span class="vt">Diverse</span><div class="open"><h3>Diverse</h3><p>Gender, race, ethnicity, generation and life path as the foundation of quality participatory processes.</p></div></a>
+        <a href="#a-mira" data-go="a-mira" style="--c:var(--d4)"><span class="vt">Rooted</span><div class="open"><h3>Rooted</h3><p>Feet on the ground, in villages, conservation units and extractive reserves. Never as outside observers.</p></div></a>
+        <a href="#a-mira" data-go="a-mira" style="--c:var(--d5)"><span class="vt">Artisanal</span><div class="open"><h3>Artisanal</h3><p>Every process tailor-made, with visual materials crafted with care.</p></div></a>
+        <a href="#design" data-go="design" style="--c:var(--d6)"><span class="vt">Systemic</span><div class="open"><h3>Systemic</h3><p>We see the organization as a whole, through the 7 dimensions of Organization Design®.</p></div></a>
+        <a href="#a-mira" data-go="a-mira" style="--c:var(--d7)"><span class="vt">Regenerative</span><div class="open"><h3>Regenerative</h3><p>We work for stronger people, organizations and territories, and for events with a lighter environmental footprint.</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="do-home">
+    <div class="wrap">
+      <div class="do-art"><img src="img/espiral.png" alt="The Organization Design spiral with its 7 dimensions" loading="lazy"></div>
+      <div class="do-txt">
+        <h2>Organization Design®</h2>
+        <p class="lead">Our own methodology sees the organization as a whole. Development is a continuous spiral: it starts with people and expands through seven integrated dimensions, even when the focus is on one of them.</p>
+        <ol class="dims7">
+          <li style="--c:var(--d1)">Individual</li><li style="--c:var(--d2)">Purpose</li><li style="--c:var(--d3)">Culture</li><li style="--c:var(--d4)">Strategy</li><li style="--c:var(--d5)">Governance</li><li style="--c:var(--d6)">Communication and Technology</li><li style="--c:var(--d7)">Learning</li>
+        </ol>
+        <div class="btns"><a class="btn solid arrow" href="#design" data-go="design">Discover Organization Design </a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria" aria-label="MIRÁ in action">
+    <div class="wrap"><div class="sec-head"><h2>Us in action</h2></div></div>
+    <div class="trilho" tabindex="0" aria-label="Photos from workshops and projects; hover to pause">
+      <div class="faixa"><img src="img/conversa.jpg" alt="Participants working together on a panel" loading="lazy"><img src="img/g163.jpg" alt="A group dancing during a workshop" loading="lazy"><img src="img/aldeia.jpg" alt="Facilitators with Indigenous leaders" loading="lazy"><img src="img/registro.jpg" alt="A facilitator drawing a visual record" loading="lazy"><img src="img/g168.jpg" alt="A group gathered in front of workshop panels" loading="lazy"><img src="img/rio.jpg" alt="A boat trip along an Amazon river" loading="lazy"><img src="img/g183.jpg" alt="Facilitators closing a workshop" loading="lazy"><img src="img/microfone.jpg" alt="A facilitator speaking into a microphone" loading="lazy"><img src="img/g145.jpg" alt="Team selfie in front of a mural" loading="lazy"><img src="img/g286.jpg" alt="The Pataxó path, a forest trail" loading="lazy"><img src="img/g309.jpg" alt="A facilitator leading a circle in a large room" loading="lazy"><img src="img/g192.jpg" alt="A large group gathered under the trees" loading="lazy"><img src="img/g268.jpg" alt="Facilitators on a field visit" loading="lazy"><span aria-hidden="true" class="dup"><img src="img/conversa.jpg" alt="" data-alt="Participants working together on a panel" loading="lazy"><img src="img/g163.jpg" alt="" data-alt="A group dancing during a workshop" loading="lazy"><img src="img/aldeia.jpg" alt="" data-alt="Facilitators with Indigenous leaders" loading="lazy"><img src="img/registro.jpg" alt="" data-alt="A facilitator drawing a visual record" loading="lazy"><img src="img/g168.jpg" alt="" data-alt="A group gathered in front of workshop panels" loading="lazy"><img src="img/rio.jpg" alt="" data-alt="A boat trip along an Amazon river" loading="lazy"><img src="img/g183.jpg" alt="" data-alt="Facilitators closing a workshop" loading="lazy"><img src="img/microfone.jpg" alt="" data-alt="A facilitator speaking into a microphone" loading="lazy"><img src="img/g145.jpg" alt="" data-alt="Team selfie in front of a mural" loading="lazy"><img src="img/g286.jpg" alt="" data-alt="The Pataxó path, a forest trail" loading="lazy"><img src="img/g309.jpg" alt="" data-alt="A facilitator leading a circle in a large room" loading="lazy"><img src="img/g192.jpg" alt="" data-alt="A large group gathered under the trees" loading="lazy"><img src="img/g268.jpg" alt="" data-alt="Facilitators on a field visit" loading="lazy"></span></div>
+    </div>
+  </section>
+
+  <section class="servicos" id="servicos">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Services</h2>
+      </div>
+      <div class="grid3">
+        <article class="serv">
+          <img class="blob" style="clip-path:url(#blob3)" src="img/mesa.jpg" alt="Planning workshop in a meeting room" loading="lazy">
+          <span class="tag">to transform</span>
+          <div style="display:grid;gap:10px"><h3>Consulting</h3><p>For when you want to transform your organization from within and have support along the way. From strategic planning to executive secretariat.</p></div>
+          <a href="#consultoria" data-go="consultoria" class="arrow">See consulting </a>
+        </article>
+        <article class="serv">
+          <img class="blob" style="clip-path:url(#blob10)" src="img/facil.jpg" alt="A large group at the end of a facilitated event" loading="lazy">
+          <span class="tag">to lead</span>
+          <div style="display:grid;gap:10px"><h3>Facilitation</h3><p>For when you want a MIRÁ facilitator leading your event, in person or online, with visual recording, reporting and graphic design.</p></div>
+          <a href="#facilitacao" data-go="facilitacao" class="arrow">See facilitation </a>
+        </article>
+        <article class="serv">
+          <img class="blob" style="clip-path:url(#blob14)" src="img/capac.jpg" alt="Participants sitting in a circle during a training" loading="lazy">
+          <span class="tag">to learn</span>
+          <div style="display:grid;gap:10px"><h3>Training</h3><p>For when you and your team want to learn how to do it: workshops, courses, immersive experiences and the FIT Journey.</p></div>
+          <a href="#capacitacao" data-go="capacitacao" class="arrow">See training </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="numeros" aria-label="Numbers">
+    <div class="wrap">
+      <div class="num"><b>+320</b><span>events and projects</span></div>
+      <div class="num"><b>+6.000</b><span>participants</span></div>
+      <div class="num"><b>+200</b><span>organizations served</span></div>
+    </div>
+  </section>
+
+  <section class="logos">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Clients</h2>
+      </div>
+      <div class="setores" id="setores" role="group" aria-label="Filter by sector">
+        <button type="button" data-s="todos" aria-pressed="true">All</button>
+        <button type="button" data-s="gov" aria-pressed="false">Government</button>
+        <button type="button" data-s="int" aria-pressed="false">International organizations</button>
+        <button type="button" data-s="soc" aria-pressed="false">Civil society</button>
+        <button type="button" data-s="emp" aria-pressed="false">Companies</button>
+        <button type="button" data-s="aca" aria-pressed="false">Academia</button>
+      </div>
+      <div class="row" id="logoRow">
+        <img data-s="gov" src="img/ap/l00.png" alt="Ministério dos Povos Indígenas" title="Ministério dos Povos Indígenas" loading="lazy">
+        <img data-s="gov" src="img/ap/l01.png" alt="Ministério Planejamento e Orçamento" title="Ministério Planejamento e Orçamento" loading="lazy">
+        <img data-s="gov" src="img/ap/l02.png" alt="Escola Nacional de Administração Pública" title="Escola Nacional de Administração Pública" loading="lazy">
+        <img data-s="gov" src="img/ap/l03.png" alt="Ministério da Educação" title="Ministério da Educação" loading="lazy">
+        <img data-s="gov" src="img/ap/l04.png" alt="Tribunal Regional do Trabalho da 10ª Região" title="Tribunal Regional do Trabalho da 10ª Região" loading="lazy">
+        <img data-s="gov" src="img/ap/l05.png" alt="Tribunal Regional do Trabalho da 15ª Região" title="Tribunal Regional do Trabalho da 15ª Região" loading="lazy">
+        <img data-s="gov" src="img/ap/l06.png" alt="INSS – Instituto Nacional do Seguro Social" title="INSS – Instituto Nacional do Seguro Social" loading="lazy">
+        <img data-s="gov" src="img/ap/l07.png" alt="Fundo Nacional de Desenvolvimento da Educação" title="Fundo Nacional de Desenvolvimento da Educação" loading="lazy">
+        <img data-s="gov" src="img/ap/l08.png" alt="Consórcio Intermunicipal do Baixo Jequitinhonha" title="Consórcio Intermunicipal do Baixo Jequitinhonha" loading="lazy">
+        <img data-s="gov" src="img/ap/l09.png" alt="Agência Nacional do Cinema" title="Agência Nacional do Cinema" loading="lazy">
+        <img data-s="gov" src="img/ap/l10.png" alt="Agência Nacional de Telecomunicações" title="Agência Nacional de Telecomunicações" loading="lazy">
+        <img data-s="gov" src="img/ap/l11.png" alt="Instituto Chico Mendes de Conservação da Biodiversidade" title="Instituto Chico Mendes de Conservação da Biodiversidade" loading="lazy">
+        <img data-s="gov" src="img/ap/l12.png" alt="Banco Nacional de Desenvolvimento Econômico e Social" title="Banco Nacional de Desenvolvimento Econômico e Social" loading="lazy">
+        <img data-s="gov" src="img/ap/l13.png" alt="Ministério do Meio Ambiente e Mudança do Clima" title="Ministério do Meio Ambiente e Mudança do Clima" loading="lazy">
+        <img data-s="gov" src="img/ap/l14.png" alt="Ministério das Cidades" title="Ministério das Cidades" loading="lazy">
+        <img data-s="gov" src="img/ap/l15.png" alt="Ministério da Saúde" title="Ministério da Saúde" loading="lazy">
+        <img data-s="gov" src="img/ap/l16.png" alt="Serviço Florestal Brasileiro - SFB" title="Serviço Florestal Brasileiro - SFB" loading="lazy">
+        <img data-s="gov" src="img/ap/l17.png" alt="Fundação Nacional dos Povos Indígenas" title="Fundação Nacional dos Povos Indígenas" loading="lazy">
+        <img data-s="gov" src="img/ap/l18.png" alt="Ministério da Ciência, Tecnologia e Inovação" title="Ministério da Ciência, Tecnologia e Inovação" loading="lazy">
+        <img data-s="gov" src="img/ap/l19.png" alt="INPE – Instituto Nacional de Pesquisas Espaciais" title="INPE – Instituto Nacional de Pesquisas Espaciais" loading="lazy">
+        <img data-s="gov" src="img/ap/l20.png" alt="Instituto Nacional de Pesquisas Espaciais" title="Instituto Nacional de Pesquisas Espaciais" loading="lazy">
+        <img data-s="soc" src="img/ap/l21.png" alt="Instituto Raoni" title="Instituto Raoni" loading="lazy">
+        <img data-s="soc" src="img/ap/l22.png" alt="Instituto Kabu" title="Instituto Kabu" loading="lazy">
+        <img data-s="soc" src="img/ap/l23.png" alt="Federação dos Povos e Organizações Indígenas do Mato Grosso" title="Federação dos Povos e Organizações Indígenas do Mato Grosso" loading="lazy">
+        <img data-s="soc" src="img/ap/l24.png" alt="Associação Lésbica Feminista de Brasília – Coturno de Vênus" title="Associação Lésbica Feminista de Brasília – Coturno de Vênus" loading="lazy">
+        <img data-s="soc" src="img/ap/l25.png" alt="Movimento Pessoas a Frente" title="Movimento Pessoas a Frente" loading="lazy">
+        <img data-s="soc" src="img/ap/l26.png" alt="Fundação Renova" title="Fundação Renova" loading="lazy">
+        <img data-s="soc" src="img/ap/l27.png" alt="Instituto Mar Adentro" title="Instituto Mar Adentro" loading="lazy">
+        <img data-s="soc" src="img/ap/l28.png" alt="Instituto Centro de Vida" title="Instituto Centro de Vida" loading="lazy">
+        <img data-s="soc" src="img/ap/l29.png" alt="SAVE Brasil" title="SAVE Brasil" loading="lazy">
+        <img data-s="soc" src="img/ap/l30.png" alt="WWF Brasil" title="WWF Brasil" loading="lazy">
+        <img data-s="soc" src="img/ap/l31.png" alt="Coordenadoria Ecumênica de Serviço" title="Coordenadoria Ecumênica de Serviço" loading="lazy">
+        <img data-s="soc" src="img/ap/l32.png" alt="Funbio – Fundo Brasileiro para a Biodiversidade" title="Funbio – Fundo Brasileiro para a Biodiversidade" loading="lazy">
+        <img data-s="soc" src="img/ap/l33.png" alt="Instituto SocioAmbiental" title="Instituto SocioAmbiental" loading="lazy">
+        <img data-s="soc" src="img/ap/l34.png" alt="Aprospera – Associação dos Produtores Agroecológicos do Alto São Bartolomeu" title="Aprospera – Associação dos Produtores Agroecológicos do Alto São Bartolomeu" loading="lazy">
+        <img data-s="soc" src="img/ap/l35.png" alt="Associação Floresta Protegida" title="Associação Floresta Protegida" loading="lazy">
+        <img data-s="soc" src="img/ap/l36.png" alt="Centro Internacional de Água e Transdisciplinaridade -" title="Centro Internacional de Água e Transdisciplinaridade -" loading="lazy">
+        <img data-s="soc" src="img/ap/l37.png" alt="Equipe de Conservação da Amazônia" title="Equipe de Conservação da Amazônia" loading="lazy">
+        <img data-s="soc" src="img/ap/l38.png" alt="Coordenação das Organizações Indígenas da Amazônia Brasileira" title="Coordenação das Organizações Indígenas da Amazônia Brasileira" loading="lazy">
+        <img data-s="soc" src="img/ap/l39.png" alt="Instituto República" title="Instituto República" loading="lazy">
+        <img data-s="soc" src="img/ap/l40.png" alt="Rede Xingu+" title="Rede Xingu+" loading="lazy">
+        <img data-s="soc" src="img/ap/l41.png" alt="Instituto Terra" title="Instituto Terra" loading="lazy">
+        <img data-s="soc" src="img/ap/l42.png" alt="Rede Brasileira de Reservas da Biosfera" title="Rede Brasileira de Reservas da Biosfera" loading="lazy">
+        <img data-s="soc" src="img/ap/l43.png" alt="Projeto Cooperação" title="Projeto Cooperação" loading="lazy">
+        <img data-s="soc" src="img/ap/l44.png" alt="Saberes Sociobio" title="Saberes Sociobio" loading="lazy">
+        <img data-s="int" src="img/ap/l45.png" alt="Banco Interamericano de Desenvolvimento" title="Banco Interamericano de Desenvolvimento" loading="lazy">
+        <img data-s="int" src="img/ap/l46.png" alt="PNUD – Programa das Nações Unidas para o Desenvolvimento" title="PNUD – Programa das Nações Unidas para o Desenvolvimento" loading="lazy">
+        <img data-s="int" src="img/ap/l47.png" alt="Organização do Tratado de Cooperação Amazônica" title="Organização do Tratado de Cooperação Amazônica" loading="lazy">
+        <img data-s="int" src="img/ap/l48.png" alt="Thomson Reuters Foundation" title="Thomson Reuters Foundation" loading="lazy">
+        <img data-s="int" src="img/ap/l49.png" alt="The Nature Conservancy" title="The Nature Conservancy" loading="lazy">
+        <img data-s="int" src="img/ap/l50.png" alt="German Agency for International Development Cooperation" title="German Agency for International Development Cooperation" loading="lazy">
+        <img data-s="int" src="img/ap/l51.png" alt="KfW Entwicklungsbank (Banco Alemão de Desenvolvimento)" title="KfW Entwicklungsbank (Banco Alemão de Desenvolvimento)" loading="lazy">
+        <img data-s="int" src="img/ap/l52.png" alt="Organização das Nações Unidas para a Educação, a Ciência e a Cultura" title="Organização das Nações Unidas para a Educação, a Ciência e a Cultura" loading="lazy">
+        <img data-s="int" src="img/ap/l53.png" alt="Centro Internacional de Pesquisa Agroflorestal (World Agroforestry - ICRAF)" title="Centro Internacional de Pesquisa Agroflorestal (World Agroforestry - ICRAF)" loading="lazy">
+        <img data-s="int" src="img/ap/l54.png" alt="Organização Latino-Americana e do Caribe de Entidades Fiscalizadoras Superiores" title="Organização Latino-Americana e do Caribe de Entidades Fiscalizadoras Superiores" loading="lazy">
+        <img data-s="int" src="img/ap/l55.png" alt="International Conservation Fund of Canada" title="International Conservation Fund of Canada" loading="lazy">
+        <img data-s="int" src="img/ap/l56.png" alt="GOPA Consulting Group" title="GOPA Consulting Group" loading="lazy">
+        <img data-s="int" src="img/ap/l57.png" alt="Organização das Nações Unidas para a Alimentação e a Agricultura" title="Organização das Nações Unidas para a Alimentação e a Agricultura" loading="lazy">
+        <img data-s="int" src="img/ap/l58.png" alt="Banco de Desenvolvimento da América Latina e Caribe" title="Banco de Desenvolvimento da América Latina e Caribe" loading="lazy">
+        <img data-s="int" src="img/ap/l59.png" alt="Escritório das Nações Unidas sobre Drogas e Crime (UNODC)" title="Escritório das Nações Unidas sobre Drogas e Crime (UNODC)" loading="lazy">
+        <img data-s="int" src="img/ap/l60.png" alt="The International Criminal Police Organization" title="The International Criminal Police Organization" loading="lazy">
+        <img data-s="int" src="img/ap/l61.png" alt="Fundo de População das Nações Unidas" title="Fundo de População das Nações Unidas" loading="lazy">
+        <img data-s="int" src="img/ap/l62.png" alt="Organização dos Estados Ibero-americanos para a Educação a Ciência e a Cultura" title="Organização dos Estados Ibero-americanos para a Educação a Ciência e a Cultura" loading="lazy">
+        <img data-s="int" src="img/ap/l63.png" alt="Embaixada da Noruega" title="Embaixada da Noruega" loading="lazy">
+        <img data-s="int" src="img/ap/l64.png" alt="Embaixada do Reino Unido" title="Embaixada do Reino Unido" loading="lazy">
+        <img data-s="int" src="img/ap/l65.png" alt="Rainforest Foundation Norway" title="Rainforest Foundation Norway" loading="lazy">
+        <img data-s="emp" src="img/ap/l66.png" alt="PACTO" title="PACTO" loading="lazy">
+        <img data-s="emp" src="img/ap/l67.png" alt="Sociocracia Brasil" title="Sociocracia Brasil" loading="lazy">
+        <img data-s="emp" src="img/ap/l68.png" alt="COMOVA" title="COMOVA" loading="lazy">
+        <img data-s="emp" src="img/ap/l69.png" alt="Instituto Península" title="Instituto Península" loading="lazy">
+        <img data-s="emp" src="img/ap/l70.png" alt="Associação Brasileira de Franchising" title="Associação Brasileira de Franchising" loading="lazy">
+        <img data-s="emp" src="img/ap/l71.png" alt="MSA" title="MSA" loading="lazy">
+        <img data-s="emp" src="img/ap/l72.png" alt="Instituto Anga" title="Instituto Anga" loading="lazy">
+        <img data-s="emp" src="img/ap/l73.png" alt="Gelato Borelli" title="Gelato Borelli" loading="lazy">
+        <img data-s="emp" src="img/ap/l74.png" alt="Deploy - princípios lean" title="Deploy - princípios lean" loading="lazy">
+        <img data-s="emp" src="img/ap/l75.png" alt="Ossobuco - Histórias que reverberam" title="Ossobuco - Histórias que reverberam" loading="lazy">
+        <img data-s="emp" src="img/ap/l76.png" alt="New Ways of Working" title="New Ways of Working" loading="lazy">
+        <img data-s="emp" src="img/ap/l77.png" alt="Hexion Química do Brasil Ltda (Hexion Inc.)" title="Hexion Química do Brasil Ltda (Hexion Inc.)" loading="lazy">
+        <img data-s="emp" src="img/ap/l78.png" alt="Agricultura Familiar e Agroecologia" title="Agricultura Familiar e Agroecologia" loading="lazy">
+        <img data-s="emp" src="img/ap/l79.png" alt="Ámanae" title="Ámanae" loading="lazy">
+        <img data-s="emp" src="img/ap/l80.png" alt="IBY Gestão Socioambiental" title="IBY Gestão Socioambiental" loading="lazy">
+        <img data-s="emp" src="img/ap/l81.png" alt="JB PROPAGANDA E MARKETING LTDA" title="JB PROPAGANDA E MARKETING LTDA" loading="lazy">
+        <img data-s="emp" src="img/ap/l82.png" alt="Banco Cooperativo do Brasil S.A. (Bancoob, hoje Banco Sicoob)" title="Banco Cooperativo do Brasil S.A. (Bancoob, hoje Banco Sicoob)" loading="lazy">
+        <img data-s="aca" src="img/cli/max-planck-gesselschaft-pa1x.png" alt="Max-Planck-Gesellschaft zur Förderung der Wissenschaften" title="Max-Planck-Gesellschaft zur Förderung der Wissenschaften" loading="lazy">
+        <img data-s="aca" src="img/cli/usp-tx8k.png" alt="University of São Paulo" title="University of São Paulo" loading="lazy">
+        <img data-s="aca" src="img/cli/yale-nw1j.png" alt="Yale School of Environment" title="Yale School of Environment" loading="lazy">
+        <p class="vazio" id="logoVazio" hidden>No logos in this sector yet.</p>
+      </div>
+      <div class="btns" style="margin-top:36px"><a class="btn ghost arrow" href="#portfolio" data-go="portfolio">See portfolio and clients </a></div>
+    </div>
+  </section>
+
+  <section class="quote" aria-label="Testimonials">
+    <div class="wrap">
+      <img class="blob" style="clip-path:url(#blob7)" src="img/grupo.jpg" alt="Workshop participants gathered for a photo" loading="lazy">
+      <div class="depo" id="depo">
+        <div class="depo-track" id="depoTrack"></div>
+        <div class="depo-nav">
+          <button type="button" id="depoPrev" aria-label="Previous testimonial">←</button>
+          <div class="depo-dots" id="depoDots" role="tablist" aria-label="Choose a testimonial"></div>
+          <button type="button" id="depoNext" aria-label="Next testimonial">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== DESIGN DE ORGANIZAÇÕES ===================== -->
+<div class="view" id="v-design" hidden>
+  <section class="do-hero">
+    <div class="wrap">
+      <span class="eyebrow">Organization Design®</span>
+      <h1>Development as a <span class="hand">continuous spiral</span></h1>
+      <p class="lead">We see an organization's evolution as a spiral process: continuous and expanding. Transformation is only possible when all dimensions are worked on together, even when the focus is on one of them. We create spaces for dialogue where your team leads the way in building solutions.</p>
+    </div>
+  </section>
+
+  <section class="espiral" aria-label="The 7 dimensions">
+    <div class="wrap">
+      <div class="spiral-box">
+        <div class="spiral-art" id="spiralBox"><div class="cam" id="cam"><img class="sp" id="spiralArt" src="img/espiral.png" alt=""><svg id="spiral" viewBox="0 0 100 100" role="group" aria-label="Spiral of the 7 dimensions. Choose a dimension."></svg></div><img class="simbolo" id="simbolo" src="img/simbolo.png" alt=""></div>
+        <div class="chips" id="chips" role="group" aria-label="Dimensions"></div>
+      </div>
+      <article class="panel" id="panel" aria-live="polite"></article>
+    </div>
+  </section>
+
+  <section class="inspira" style="background:var(--soft)">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Inspirations</h2>
+        <p class="lead">Some of the methodological frameworks, facilitation and planning techniques we draw on to create Organization Design® and to run our activities.</p>
+      </div>
+      <div class="cloud" id="cloud"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== DEMAIS PÁGINAS ===================== -->
+<div class="view" id="v-a-mira" hidden>
+  <section class="do-hero">
+    <div class="wrap">
+      <span class="eyebrow">About MIRÁ</span>
+      <h1>We are the ones we have been waiting for.</h1>
+      <p class="lead">A Hopi prophecy. We open our presentation with it because it sums up what we believe: change starts with us.</p>
+    </div>
+  </section>
+
+  <section class="agente">
+    <div class="wrap">
+      <p class="big">Who we are <span class="hand">we, the people</span></p>
+      <div class="body">
+        <p>MIRÁ comes from Tupi-Guarani and means “we, the people”. We believe that <strong>human beings</strong> are the catalyst of change, and that the best way to change the world is to strengthen our human systems: <strong>our organizations</strong>.</p>
+        <p>We support the <strong>organizational development</strong> of businesses, institutions and initiatives that pursue prosperity without giving up on <strong>generating a positive impact on the human, environmental and cultural ecosystem</strong>. Organizations that want to balance results with care for relationships, and find happiness at work.</p>
+        <p class="proposito">Our purpose is to co-create the planet we dream of.</p>
+      </div>
+    </div>
+  </section>
+  <section class="essencia">
+    <div class="wrap">
+      <div class="sec-head"><h2>The essence of MIRÁ</h2></div>
+      <div class="ess-grid"><article class="ess-full" style="--c:var(--d1)"><h3>Human</h3><p>We create light, warm and welcoming environments, the opposite of the ceremonious facilitation that keeps people at a distance. Lightness shows up in the materials, in the way we speak and listen, and in the activities. Light environments do not replace rigor: they are what opens space for people to give themselves to the process.</p></article><article class="ess-full" style="--c:var(--d2)"><h3>Deep</h3><p>We combine lightness and depth. We design processes so people truly talk to each other, in small groups. We dive in together, rather than directing from the outside. We focus the workshop on what needs the whole group and save the details for refinement sessions. Every activity exists to serve a real goal.</p></article><article class="ess-full" style="--c:var(--d3)"><h3>Diverse</h3><p>Diversity is the foundation of quality participatory processes. We hold a permanent commitment to the LGBTQIA+ community and, as women, to confronting sexism in dialogue. We adapt language, tools and methodology to include those usually left at the margins: women, young people, Indigenous peoples, traditional communities, quilombolas and people who cannot read or write. And we map the group's profile so the report shows the diversity present, or its absence.</p></article><article class="ess-full" style="--c:var(--d4)"><h3>Rooted</h3><p>We have facilitated many processes in villages, conservation units and extractive reserves, with our feet on the ground. Every meeting is anchored in what really matters to those people and that context. We move between the tables and build together: MIRÁ means “we, the people”.</p></article><article class="ess-full" style="--c:var(--d5)"><h3>Artisanal</h3><p>We build every workshop by hand, together with the client, without tying ourselves to a single methodology. We prepare high-quality visual materials, from the agenda to the event's digital guide. We use technology, including artificial intelligence, to speed things up, never to replace the human eye.</p></article><article class="ess-full" style="--c:var(--d6)"><h3>Systemic</h3><p>We see organizations holistically, through the 7 dimensions of Organization Design®. Development is a continuous spiral, so we don't work with isolated solutions. We combine our methodological lens with the knowledge of those who live each context, including its political and social complexities. <a href="#design" data-go="design">Discover Organization Design®</a></p></article><article class="ess-full" style="--c:var(--d7)"><h3>Regenerative</h3><p>We work alongside socio-environmental organizations, Indigenous peoples, traditional communities, public agencies and conservation initiatives. We favor digital solutions, cut down on printing and disposables, and value local suppliers. We invite short pauses of silence and reconnection with oneself, with others and with nature.</p></article></div>
+    </div>
+  </section>
+  <section class="socias" style="background:var(--soft)">
+    <div class="wrap">
+      <div class="sec-head"><h2>The partners</h2></div>
+      <div class="socias-grid">
+        <article class="socia">
+          <img class="retrato" src="img/luiza-r.png" alt="Luiza Padoa" loading="lazy">
+          <h3>Luiza Padoa</h3>
+          <span class="tag">consultant and facilitator</span>
+          <p>Biologist with a master's in Ecology and Sustainable Development from Université Montpellier II, trained in innovative methodologies such as Permaculture, Agroforestry, Dragon Dreaming, Graphic Facilitation, Nonviolent Communication and Sociocracy. Mother of Lila, she lived in São Paulo and in France before settling in Brasília. A facilitator and consultant since 2011.</p>
+        </article>
+        <article class="socia">
+          <img class="retrato" src="img/louise-r.png" alt="Louise Vendramini" loading="lazy">
+          <h3>Louise Vendramini</h3>
+          <span class="tag">consultant and facilitator</span>
+          <p>Business administrator with a master's in Design and a postgraduate degree in Group Dynamics. A graphic and dialogue facilitator since 2013 and, since 2020, an organizational development consultant. She draws on techniques from management, design, visual thinking, lean and participatory methodologies.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="historia">
+    <div class="wrap">
+      <div class="duas">
+        <div>
+          <h2>Our story</h2>
+          <ol class="linha">
+            <li><b>2012</b><span>First activities</span></li>
+            <li><b>2018</b><span>MIRÁ takes shape</span></li>
+            <li><b>2019</b><span>Company registered; Organization Design® trademark</span></li>
+          </ol>
+        </div>
+        <div>
+          <h2>Languages</h2>
+          <p class="txt">We work in Portuguese, English and French, and in Spanish with partners from our network. We prepare materials in more than one language and have experience with simultaneous interpretation.</p>
+          <p class="hand" style="font-size:20px;margin-top:18px">And we use the universal language of drawing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="view" id="v-consultoria" hidden>
+  <section class="do-hero">
+    <div class="wrap">
+      <span class="eyebrow">Consulting</span>
+      <h1>Consulting, <span class="hand">to transform</span></h1>
+      <p class="lead">For when you want to transform your organization from within and have support along the way. We accompany projects, companies, NGOs, collectives, schools and communities, from strategic planning to executive secretariat.</p>
+    </div>
+  </section>
+
+  <section class="blocos"><div class="wrap">
+      <article class="bloco">
+        <img class="blob" style="clip-path:url(#blob3)" src="img/pe.jpg" alt="A group in a circle at a strategic planning workshop" loading="lazy">
+        <div class="bloco-txt">
+          <h2>Strategic Planning</h2>
+          <div class="txt"><p>We help your organization define clearly where it wants to go, and stay on course. We design a tailor-made methodology, with approaches such as Theory of Change, Transformative Scenarios, PESTEL, Appreciative Inquiry and the Balanced Scorecard.</p><p>The bigger challenge is sustaining the strategy: we deliver monitoring tools and facilitate periodic reviews, so the plan doesn't end up in a drawer.</p></div>
+          <div class="cases"><span class="eyebrow">Cases</span><ul><li>INPE · BiomasBR Program (2026)</li><li>Brazilian National Forest Inventory, via FAO (2025)</li><li>Rainforest Foundation · ForEco Program (2024)</li></ul></div>
+          <div class="btns"><a class="btn ghost arrow" href="#contato" data-go="contato">I'd like to talk about this </a></div>
+        </div>
+      </article>
+
+      <article class="bloco">
+        <img class="blob" style="clip-path:url(#blob5);object-position:center 20%" src="img/do.jpg" alt="A team working together on panels at a workshop" loading="lazy">
+        <div class="bloco-txt">
+          <h2>Organizational Development</h2>
+          <div class="txt"><p>While planning defines the “where to”, organizational development takes care of “how” the organization works on the inside: decisions, agreements, meetings, team management and communication.</p><p>We don't implement ready-made models. It's long-haul work that brings fluidity, clarity, better results and more happiness in everyday life.</p></div>
+          <div class="cases"><span class="eyebrow">Cases</span><ul><li>Enap · GNova Lab (2024)</li><li>WWF-Brazil · Organizational Evolution (2018 to 2020)</li></ul></div>
+          <div class="btns"><a class="btn ghost arrow" href="#contato" data-go="contato">I'd like to talk about this </a></div>
+        </div>
+      </article>
+
+      <article class="bloco">
+        <img class="blob" style="clip-path:url(#blob10);object-position:left center" src="img/fit.jpg" alt="Luiza and Louise in front of an event banner" loading="lazy">
+        <div class="bloco-txt">
+          <h2>FIT Consulting</h2>
+          <div class="txt"><p>Integral Happiness at Work (FIT), for small organizations that don't usually have access to consulting. Inspired by Gross National Happiness, it puts happiness at the center of strategy, built on three elements: working with lightness, having more time, and financial sustainability.</p><p>It includes awareness-raising, a diagnosis of the 7 dimensions, access to the FIT Journey, implementation workshops and mentoring.</p></div>
+          <div class="cases"><span class="eyebrow">Cases</span><ul><li>CCCA · Center for Climate Crime Analysis (2024)</li><li>Associação Floresta Protegida (2025)</li></ul></div><div class="tabela"><table><thead><tr><th>Package</th><th>People</th></tr></thead><tbody>
+<tr><td>FIT 5K</td><td>up to 5</td></tr><tr><td>FIT 10K</td><td>up to 10</td></tr><tr><td>FIT 15K</td><td>up to 15</td></tr><tr><td>FIT 20K</td><td>up to 15, with more workshops and mentoring</td></tr><tr><td>Custom FIT</td><td>on request</td></tr>
+</tbody></table><p class="nota">Package prices are given in the proposal.</p></div>
+          <div class="btns"><a class="btn ghost arrow" href="#contato" data-go="contato">I'd like to talk about this </a></div>
+        </div>
+      </article>
+
+      <article class="bloco">
+        <img class="blob" style="clip-path:url(#blob14)" src="img/pers.jpg" alt="Participants building a panel with sticky notes" loading="lazy">
+        <div class="bloco-txt">
+          <h2>Custom Consulting</h2>
+          <div class="txt"><p>For when the challenge is unique and calls for a solution built from scratch. The journey usually has six phases: awareness-raising, diagnosis, prototyping, training, implementation and follow-up.</p><p>When needed, we bring partners onto the team.</p></div>
+          <div class="cases"><span class="eyebrow">Cases</span><ul><li>Ministry of Education · National Education Plan 2024–2034 (2023)</li><li>Aprospera · Sociocracy implementation (2018)</li></ul></div>
+          <div class="btns"><a class="btn ghost arrow" href="#contato" data-go="contato">I'd like to talk about this </a></div>
+        </div>
+      </article>
+
+      <article class="bloco">
+        <img class="blob" style="clip-path:url(#blob7)" src="img/grupo.jpg" alt="A project team gathered for a photo" loading="lazy">
+        <div class="bloco-txt">
+          <h2>Executive Secretariat</h2>
+          <div class="txt"><p>We take care of project management and executive secretariat with a systemic view and attention to detail. Practically inside your organization, we help sustain change and organize the work, with participatory meetings and tools such as Asana, Airtable, Miro and Zoom.</p></div>
+          <div class="cases"><span class="eyebrow">Cases</span><ul><li>CAF and the Ministry of Planning and Budget (2025 to 2026)</li><li>IPOEMA · Águas do Cerrado Project (2014 to 2016)</li></ul></div>
+          <div class="btns"><a class="btn ghost arrow" href="#contato" data-go="contato">I'd like to talk about this </a></div>
+        </div>
+      </article>
+
+  </div></section>
+  <section class="numeros" aria-label="Numbers"><div class="wrap" style="grid-template-columns:repeat(3,1fr)"><div class="num"><b>+50</b><span>projects</span></div><div class="num"><b>+1.500</b><span>participants</span></div><div class="num"><b>+70</b><span>organizations</span></div></div></section>
+
+  <section class="quote"><div class="wrap" style="grid-template-columns:1fr"><blockquote class="depo-one">What I take away as most meaningful is the collective planning and the chance to integrate. Building together strengthens the work and expands the results.<cite>MIRÁ consulting participant</cite></blockquote></div></section>
+
+</div>
+<div class="view" id="v-facilitacao" hidden>
+  <section class="do-hero">
+    <div class="wrap">
+      <span class="eyebrow">Facilitation</span>
+      <h1>Facilitation, <span class="hand">to lead</span></h1>
+      <p class="lead">For when you want to experience the power of our methodologies with a MIRÁ facilitator leading your event. We run in-person or online meetings and take care of everything around them: visual recording, reporting and graphic design.</p>
+    </div>
+  </section>
+
+  <section class="blocos"><div class="wrap">
+      <article class="bloco">
+        <img class="blob" style="clip-path:url(#blob10)" src="img/facil.jpg" alt="A large group at the end of a facilitated event" loading="lazy">
+        <div class="bloco-txt">
+          <h2>Event facilitation</h2>
+          <div class="txt"><p>Meetings, workshops and seminars where participants lead the way in creating solutions. We ensure smooth, efficient processes, and visual thinking runs through all our methodologies.</p><p>Formats: in person, online and “+ visual”, with a graphic facilitator on the team. We prepare the event's digital guide, agenda, visual templates, participant wall, photo album and evaluation.</p></div>
+          <div class="cases"><span class="eyebrow">Cases</span><ul><li>GIZ and GOPA · Cidade Presente (2024)</li><li>UNDP and the Ministry of the Environment · REDD+ Safeguards (2024)</li><li>Movimento Pessoas à Frente · online journeys (2023 and 2024)</li></ul></div>
+          <div class="btns"><a class="btn ghost arrow" href="#contato" data-go="contato">I'd like to talk about this </a></div>
+        </div>
+      </article>
+
+      <article class="bloco">
+        <img class="blob" style="clip-path:url(#blob17);object-position:left center" src="img/regvis.jpg" alt="Louise and Luiza drawing a visual recording panel" loading="lazy">
+        <div class="bloco-txt">
+          <h2>Visual recording</h2>
+          <div class="txt"><p>We draw in real time what is being said and built, on paper or digital panels. The record makes participants feel heard, supports shared understanding, makes dialogue visible and creates an engaging synthesis.</p><p>We prepare the graphic design before the event, in the organization's visual identity.</p></div>
+          <div class="cases"><span class="eyebrow">Cases</span><ul><li>UNFPA · Global Symposium on Climate Justice (2025)</li><li>Enap · Innovation Week (2023)</li></ul></div>
+          <div class="btns"><a class="btn ghost arrow" href="#contato" data-go="contato">I'd like to talk about this </a></div>
+        </div>
+      </article>
+
+      <article class="bloco">
+        <img class="blob" style="clip-path:url(#blob3);object-position:30% center" src="img/relat.jpg" alt="Louise reporting on an event from her laptop" loading="lazy">
+        <div class="bloco-txt">
+          <h2>Reporting</h2>
+          <div class="txt"><p>We turn the event into an organized, faithful record that preserves the knowledge produced. Three levels: simple, for accountability; complete, with participants' contributions; and visual, a publication for wide dissemination.</p><p>Always with the team's recommendations and next steps.</p></div>
+          <div class="cases"><span class="eyebrow">Cases</span><ul><li>INPE and FAO · BiomasBR (2026)</li><li>Funai and TNC · REDD+ training (2026)</li><li>Kayapó organizations · visual report (2024)</li></ul></div>
+          <div class="btns"><a class="btn ghost arrow" href="#contato" data-go="contato">I'd like to talk about this </a></div>
+        </div>
+      </article>
+
+      <article class="bloco">
+        <img class="blob" style="clip-path:url(#blob14);object-position:center top" src="img/dg.jpg" alt="A facilitator and a participant working on printed material" loading="lazy">
+        <div class="bloco-txt">
+          <h2>Graphic design</h2>
+          <div class="txt"><p>When the process results in a publication, we handle the curation, narrative, illustration and layout: strategic plans, booklets, infographics and presentations.</p></div>
+          <div class="cases"><span class="eyebrow">Cases</span><ul><li>INPE · BiomasBR strategic plan (2026)</li><li>GIZ · PoMuC modular presentation (2026)</li><li>Ministries of the Environment and Tourism · National Trails System booklet (2025)</li></ul></div>
+          <div class="btns"><a class="btn ghost arrow" href="#contato" data-go="contato">I'd like to talk about this </a></div>
+        </div>
+      </article>
+
+  </div></section>
+  <section class="etapas" style="background:var(--soft)"><div class="wrap">
+    <div class="sec-head"><h2>How it works</h2></div>
+    <ol class="passos"><li style="--c:var(--d1)"><b>1</b><span>Briefing</span></li><li style="--c:var(--d2)"><b>2</b><span>Overall methodology</span></li><li style="--c:var(--d3)"><b>3</b><span>Detailed flow</span></li><li style="--c:var(--d4)"><b>4</b><span>Preparing the materials</span></li><li style="--c:var(--d5)"><b>5</b><span>The event, with raw outputs within 3 working days</span></li><li style="--c:var(--d6)"><b>6</b><span>Refinement (optional)</span></li><li style="--c:var(--d7)"><b>7</b><span>Post-event material (optional)</span></li></ol>
+  </div></section>
+  <section class="numeros" aria-label="Numbers"><div class="wrap nums3">
+    <div><span class="eyebrow">Facilitation</span><div class="num"><b>+100</b><span>in-person events</span></div><div class="num"><b>+2.500</b><span>participants</span></div><div class="num"><b>+150</b><span>organizations</span></div></div>
+    <div><span class="eyebrow">Visual recording</span><div class="num"><b>+100</b><span>events</span></div><div class="num"><b>+4.000</b><span>participants</span></div><div class="num"><b>+80</b><span>organizations</span></div></div>
+    <div><span class="eyebrow">Reporting</span><div class="num"><b>+30</b><span>reports</span></div><div class="num"><b>+800</b><span>hours of events reported</span></div></div>
+  </div></section>
+  <section class="quote"><div class="wrap" style="grid-template-columns:1fr"><blockquote class="depo-one">We were never bored for a moment, and the content and methodology worked really well.<cite>Participant at a MIRÁ-facilitated event</cite></blockquote></div></section>
+
+</div>
+<div class="view" id="v-capacitacao" hidden>
+  <section class="do-hero">
+    <div class="wrap">
+      <span class="eyebrow">Training</span>
+      <h1>Training, <span class="hand">to learn</span></h1>
+      <p class="lead">For when you and your team want to learn how to do it. Imposed practices create resistance; people need to understand the whys. That's why our training is experiential and hands-on.</p>
+    </div>
+  </section>
+
+  <section class="blocos"><div class="wrap">
+      <article class="bloco">
+        <img class="blob" style="clip-path:url(#blob5)" src="img/capac.jpg" alt="Participants sitting in a circle during a training" loading="lazy">
+        <div class="bloco-txt">
+          <h2>Custom training</h2>
+          <div class="txt"><p>Workshops, courses, immersive experiences, talks and in-company courses, in person or online, on governance, participatory methodologies, agile management, project design, visual thinking and communication.</p><p>We start from what the group already knows, use games and experiential practices, and leave all the content organized on a platform.</p></div>
+          <div class="cases"><span class="eyebrow">Cases</span><ul><li>Enap · facilitator training (2020)</li><li>WWF-Brazil · virtual workspaces (2020)</li></ul></div>
+          <div class="btns"><a class="btn ghost arrow" href="#contato" data-go="contato">I'd like to talk about this </a></div>
+        </div>
+      </article>
+
+      <article class="bloco">
+        <img class="blob" style="clip-path:url(#blob11)" src="img/g163.jpg" alt="A group dancing during a workshop" loading="lazy">
+        <div class="bloco-txt">
+          <h2>FIT Journey</h2>
+          <div class="txt"><p>More than a course, a journey to grow your business while working with more lightness. All of Organization Design® in 11 modules, 115 pieces of content and 36 recorded hours, with certification.</p><p>The most accessible way to bring our method to your organization.</p></div>
+          <div class="fit-nums"><div><b>11</b><span>modules</span></div><div><b>115</b><span>pieces of content</span></div><div><b>36h</b><span>recorded</span></div></div>
+          <div class="btns"><a class="btn solid arrow" href="#contato" data-go="contato">I want to join the FIT Journey </a></div>
+        </div>
+      </article>
+  </div></section>
+</div>
+<div class="view" id="v-portfolio" hidden>
+  <section class="do-hero">
+    <div class="wrap">
+      <span class="eyebrow">Portfolio and clients</span>
+      <h1>What we've done together</h1>
+      <p class="lead">More than 320 events and projects with more than 200 organizations. Here are some highlighted works, our clients by sector and the way to the full portfolio.</p>
+    </div>
+  </section>
+
+  <section class="destaques"><div class="wrap">
+    <div class="sec-head"><h2>Highlights</h2></div>
+    <div class="cases-grid"><article class="case" style="--c:var(--d4)">
+          <img src="img/cases/kayapo.jpg" alt="Collective strategic planning" loading="lazy">
+          <div class="case-txt"><span class="eyebrow">Kayapó organizations · 2024</span><h3>Collective strategic planning</h3><p>Instituto Raoni, Instituto Kabu and Associação Floresta Protegida built a joint strategy for the Kayapó Indigenous lands, with a visual report.</p></div>
+        </article><article class="case" style="--c:var(--d2)">
+          <img src="img/cases/ifn.jpg" alt="National Forest Inventory strategy" loading="lazy">
+          <div class="case-txt"><span class="eyebrow">FAO and the Brazilian Forest Service · 2025</span><h3>National Forest Inventory strategy</h3><p>Two participatory workshops and a layer-by-layer refinement: purpose, pillars, objectives and governance to implement the strategy of the IFN and the SNIF.</p></div>
+        </article><article class="case" style="--c:var(--d3)">
+          <img src="img/cases/redd.jpg" alt="REDD+ social and environmental safeguards" loading="lazy">
+          <div class="case-txt"><span class="eyebrow">UNDP and the Ministry of the Environment · 2024</span><h3>REDD+ social and environmental safeguards</h3><p>Facilitation, visual recording and both written and visual reports of a technical workshop to align guidelines for implementing the safeguards in Brazil.</p></div>
+        </article><article class="case" style="--c:var(--d1)">
+          <img src="img/cases/biomas.jpg" style="object-fit:contain;background:#fff" alt="BiomasBR Program strategic planning" loading="lazy">
+          <div class="case-txt"><span class="eyebrow">INPE, via FAO · 2026</span><h3>BiomasBR Program strategic planning</h3><p>2027–2036 strategic planning for INPE's biome monitoring program, with reporting and the graphic design of the plan.</p></div>
+        </article><article class="case" style="--c:var(--d6)">
+          <img src="img/cases/gnova.jpg" alt="GNova Lab strategic planning" loading="lazy">
+          <div class="case-txt"><span class="eyebrow">Enap, via OEI · 2024</span><h3>GNova Lab strategic planning</h3><p>Organizational development and strategic planning for Enap's innovation lab, with Organization Design® and the FIT concept.</p></div>
+        </article><article class="case" style="--c:var(--d7)">
+          <img src="img/cases/cidade.jpg" alt="Cidade Presente" loading="lazy">
+          <div class="case-txt"><span class="eyebrow">GOPA, GIZ and the Ministry of Cities · 2024</span><h3>Cidade Presente</h3><p>Co-creation workshops for the financing plan in several municipalities, with reporting, within the Brazil–Germany cooperation.</p></div>
+        </article></div>
+  </div></section>
+  <section class="logos" style="background:var(--soft)"><div class="wrap">
+    <div class="sec-head"><h2>Clients</h2></div>
+    <div class="setores" id="setores2" role="group" aria-label="Filter by sector"></div>
+    <div class="row" id="logoRow2"></div>
+  </div></section>
+  <section class="completo"><div class="wrap">
+    <div class="duas">
+      <div><h2>Full portfolio</h2><p class="txt">All our work lives in a living database, with filters by service, client, year and topic. In the final website it will appear right here, embedded in the page.</p></div>
+      <div class="btns" style="align-self:center"><a class="btn solid arrow" href="https://airtable.com/appMEOZamna24P4x5/shrjakm62HsllkQwg/tbl2qasCCou074kaZ" target="_blank" rel="noopener">Open the full portfolio </a></div>
+    </div>
+  </div></section>
+</div>
+<div class="view" id="v-contato" hidden>
+  <section class="do-hero">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h1>Shall we talk about your organization?</h1>
+      <p class="lead">Tell us what you need. We reply within two working days.</p>
+    </div>
+  </section>
+
+  <section class="contato"><div class="wrap">
+    <div class="duas">
+      <form class="form" id="form" novalidate method="POST" action="https://formspree.io/f/moeekeol" accept-charset="UTF-8">
+        <label>Name<input id="f-nome" name="nome" type="text" required autocomplete="name"></label>
+        <label>Organization<input id="f-org" name="organizacao" type="text" autocomplete="organization"></label>
+        <label>E-mail<input id="f-email" name="email" type="email" required autocomplete="email"></label>
+        <label>Tell us what you need<textarea id="f-msg" name="mensagem" rows="5" required></textarea></label>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+        <div class="btns"><button class="btn solid arrow" type="submit">Send </button><a class="btn ghost" href="https://wa.me/message/ZYFZI7XEE7NVP1" target="_blank" rel="noopener">Message us on WhatsApp</a></div>
+        <p class="nota" id="formOk" hidden>We've received your message. Thank you! We reply within two working days.</p>
+        <p class="nota" id="formErr" hidden>We couldn't send it right now. Write to contato@miradesigndeorganizacoes.com.br or message us on WhatsApp.</p>
+      </form>
+      <div class="dados">
+        <h4>E-mail</h4><p class="copy">contato@miradesigndeorganizacoes.com.br</p>
+        <h4>Phone and WhatsApp</h4><p><span class="copy">(61) 99826-0865</span></p>
+        <h4>Social media</h4>
+        <div class="redes dark" id="redes2"></div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<section class="cta" id="fale">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--ink)">Contact</span>
+    <h2>Shall we talk about your organization?</h2>
+    <div class="btns"><a class="btn solid arrow" href="#contato" data-go="contato">Talk to us </a><a class="btn ghost" href="https://wa.me/message/ZYFZI7XEE7NVP1" target="_blank" rel="noopener">Message us on WhatsApp</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="img/marca-neg.png" alt="MIRÁ Organization Design">
+      <p>Consulting, facilitation and training for organizations that want to transform from within. Based in Brasília, working across Brazil.</p>
+    </div>
+    <div>
+      <h4>Talk to us</h4>
+      <ul>
+        <li class="copy">contato@miradesigndeorganizacoes.com.br</li>
+        <li><span class="copy">(61) 99826-0865</span> · <a href="https://wa.me/message/ZYFZI7XEE7NVP1" target="_blank" rel="noopener" style="color:var(--teal)">WhatsApp</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Follow us</h4>
+      <div class="redes">
+        <a href="https://wa.me/message/ZYFZI7XEE7NVP1" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.2 19.8l1.2-3.6A8.4 8.4 0 1 1 8.6 19z"/><path d="M9 8.2c.3-.6.8-.6 1-.2l.8 1.7c.1.3 0 .6-.2.8l-.5.5c.6 1.3 1.6 2.3 2.9 2.9l.5-.5c.2-.2.5-.3.8-.2l1.7.8c.4.2.4.7-.2 1-1.4.9-3.4.4-5.2-1.4S8.1 9.6 9 8.2z" class="f"/></svg></a>
+        <a href="https://www.instagram.com/miradesigndeorganizacoes" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" class="f"/></svg></a>
+        <a href="https://open.spotify.com/show/6612FkuoJ8GpqKWzIx2gNK" target="_blank" rel="noopener" aria-label="Podcast on Spotify"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M6.8 9.3c3.6-1.1 7.6-.8 10.6.9M7.5 12.4c2.9-.8 6.1-.5 8.6.9M8.2 15.3c2.3-.6 4.6-.3 6.6.8"/></svg></a>
+        <a href="https://www.youtube.com/channel/UCOH8P0zOxrAJ7gWFcUvXiEA" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.2 9.3v5.4l4.6-2.7z" class="f"/></svg></a>
+        <a href="https://www.facebook.com/miradesigndeorganizacoes" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M13.4 21.4v-7.6h2.4l.4-2.8h-2.8V9.3c0-.8.3-1.4 1.4-1.4h1.5V5.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.6 1.3-3.6 3.7V11H8.1v2.8h2.4v7.4"/></svg></a>
+        <a href="https://br.linkedin.com/company/miradesigndeorganizacoes" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3.5"/><path d="M8 10.5v6M8 7.6v.1M11.6 16.5v-6M11.6 13.2c0-1.6 1-2.8 2.4-2.8s2.2 1 2.2 2.6v3.5"/></svg></a>
+      </div>
+    </div>
+    <p class="legal">© 2026 MIRÁ Design de Organizações. Design de Organizações® (Organization Design) is a registered trademark.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.lang="en";
+  var DIMS=[
+    {n:"Individual",c:"--d1",q:"What does happiness at work mean to you?",t:["We believe that any <b>transformation in organizations starts with people.</b> Every individual can influence the space they act in. It is people who bring any system to life.","In Organization Design, the Individual dimension is the part that looks after individual <b>needs</b>, the <b>feelings</b> that come up, <b>routine</b>, fulfillment and the <b>meaning of work</b>."]},
+    {n:"Purpose",c:"--d2",q:"What impact do you want to have on the world?",t:["Every organization should have a purpose as its north star. We're not talking about \"pseudo-inspirational\" words that are empty of meaning. We're talking about a <b>shared understanding of what that organization truly cares about beyond itself.</b>","A <b>clear, shared purpose builds connection</b> among people and helps them overcome challenges. It's a beacon that <b>guides and illuminates</b>, even when the paths to get there need to change. In this dimension, we look at the <b>organization's history</b> and its <b>vision for the future</b>. It's often over time that what each organization is becoming truly comes into focus."]},
+    {n:"Culture",c:"--d3",q:"What values does your organization nurture?",t:["This organizational dimension is at once <b>so invisible and so present in every small action and word!</b> Even without any planning, every organization has a culture, a way of functioning all its own, that reflects the <b>values cultivated within it.</b>","And when we say cultivated, we mean it: it's no use defining a set of nice-sounding words as an ideal of culture or the much talked-about mindset. Culture represents <b>what we carry inside</b> and how that shows up in our working relationships. In the culture dimension, we look after aspects such as <b>motivation</b>, each person's <b>wholeness</b>, <b>relationships</b>, agreements, and how <b>difficult conversations</b> happen, without which the knots never come undone."]},
+    {n:"Strategy",c:"--d4",q:"Where does your organization want to go?",t:["The strategy dimension answers the \"<b>how</b>\" of organizations seeking to achieve their purpose. Taking care of strategy means organizing <b>processes and projects</b> and setting a <b>strategic plan</b> that looks at the <b>world</b> and inward at the organization to define <b>the best path forward</b>.","But it's not just that: this is the dimension where <b>financial planning</b> is defined, whether the <b>business model</b> or the financial architecture that ensures sustainability. How deep and detailed that plan needs to be depends on the maturity and complexity of each organization and on external factors. The fact is, <b>\"if you don't know where you want to go, any road will get you there\"</b>."]},
+    {n:"Governance",c:"--d5",on:"#fff",q:"How does your team organize itself?",t:["This abstract word captures an organizational dimension that often doesn't seem to relate directly to day-to-day work, but taking care of it has a big impact on <b>how smoothly work flows</b> and on the clarity of how it is organized.","Governance is about how <b>decisions are made</b> and at what <b>levels people can participate</b>. It's also where the <b>policies</b> that guide day-to-day work are defined. And perhaps the most tangible part of governance is defining <b>roles</b>, <b>responsibilities</b> and the <b>format of meetings</b>.","You know the saying <b>\"what's agreed up front doesn't cost you later\"?</b> It fits perfectly here. Taking care of this dimension avoids false expectations and uncertainty and makes everything flow more <b>transparently and smoothly.</b>"]},
+    {n:"Communication and Technology",c:"--d6",on:"#fff",q:"Do you lose time or have conflicts due to a lack of communication?",t:["It can seem like every problem in our organizations lives in this dimension, because it's usually when communication or a system breaks down that <b>challenges become visible.</b>","Overcoming a communication or technology problem isn't always just about fixing communication and technology. But without a doubt, we need real clarity on what <b>flows information</b> needs to follow and the right <b>tools</b> to do our work and collaborate with our team."]},
+    {n:"Learning",c:"--d7",on:"#fff",q:"What would you like your organization to learn?",t:["We don't know anyone who isn't <b>delighted</b> to learn something new, or who doesn't crack a smile when they manage to <b>overcome a challenge and do better</b>.","In the learning dimension, we look at how <b>indicators, process optimization, learning cycles</b> and <b>prototyping</b> help build a culture that never tires of improving, day after day. We also understand that every <b>process of transformation</b> passes through learning. Changing anything, touching what already works today, takes energy. That's why the reasons behind it must always be crystal clear to everyone involved!"]}
+  ];
+  var INSP=["Anthroposophy","Aquarius","Art of Hosting","BSC – Balanced Scorecard","World Café","Transformative Scenarios","Nonviolent Communication","Service Design","Systemic Design","Design Thinking","Dragon Dreaming","Deep Ecology","Open Space","Liberating Structures","Graphic Facilitation","Appreciative Inquiry","Cooperative Games","Lean Startup","Strategy Map","Logical Framework","Agile Methods","SMART Goals","OKR","Outcome Mapping","Permaculture","PESTEL","Sociocracy and Holacracy","Theory of Change","Integral Theory","Theory U"];
+  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var NS="http://www.w3.org/2000/svg";
+
+  /* ---------- espiral: a imagem oficial do Design de Organizações, com as bolinhas clicáveis por cima ---------- */
+  var svg=document.getElementById("spiral"), art=document.getElementById("spiralArt"), box=document.getElementById("spiralBox"), cam=document.getElementById("cam"), simb=document.getElementById("simbolo");
+  // centro e raio de cada bolinha na imagem "DO - espiral.png" (em % do quadro), do centro para fora
+  var POS=[[57.14,55.68,2.6],[53.13,50.7,2.9],[56.23,64.83,3.2],[41.65,68.0,3.5],[77.66,62.31,3.9],[43.0,30.0,4.1],[83.6,28.1,4.6]];
+  var CX=55, CY=55, nodes=[];
+  DIMS.forEach(function(d,k){
+    var p=POS[k];
+    var g=document.createElementNS(NS,"g"); g.setAttribute("class","node"); g.setAttribute("tabindex","0"); g.setAttribute("role","button");
+    g.setAttribute("aria-label",d.n); g.style.opacity=0;
+    var halo=document.createElementNS(NS,"circle"); halo.setAttribute("class","halo"); halo.setAttribute("cx",p[0]); halo.setAttribute("cy",p[1]); halo.style.stroke="var("+d.c+")";
+    var c=document.createElementNS(NS,"circle"); c.setAttribute("class","dot"); c.setAttribute("cx",p[0]); c.setAttribute("cy",p[1]); c.style.fill="var("+d.c+")";
+    var lab=document.createElementNS(NS,"text"); lab.textContent=d.n.replace(" and Technology","");
+    var hit=document.createElementNS(NS,"circle"); hit.setAttribute("cx",p[0]); hit.setAttribute("cy",p[1]); hit.setAttribute("fill","transparent");
+    g.appendChild(halo); g.appendChild(c); g.appendChild(lab); g.appendChild(hit); svg.appendChild(g);
+    g.addEventListener("click",function(){select(k,true)});
+    g.addEventListener("keydown",function(e){ if(e.key==="Enter"||e.key===" "){e.preventDefault();select(k,true)} });
+    nodes.push({g:g,dot:c,halo:halo,lab:lab,hit:hit,p:p,dist:Math.hypot(p[0]-CX,p[1]-CY)});
+  });
+  // tamanho das bolinhas e rótulos compensando o zoom, para não "incharem" quando a câmera se aproxima
+  function sizeNodes(s,active,rot){
+    nodes.forEach(function(n,j){
+      n.lab.setAttribute("transform","rotate("+(-(rot||0))+" "+n.p[0]+" "+n.p[1]+")"); // o rótulo fica reto enquanto a espiral gira
+      var p=n.p, r=p[2]*(j===active?1.35:1)/Math.max(1,s*.55);
+      // o rótulo fica do lado em que há espaço: na visão geral, longe da borda; com zoom, sempre voltado para o centro do enquadramento
+      var a=(rot||0)*Math.PI/180, dx=(p[0]-CX)*Math.cos(a)-(p[1]-CY)*Math.sin(a);
+      var right=s>1.05 ? dx<0 : p[0]<62;
+      n.dot.setAttribute("r",r); n.dot.style.strokeWidth=(.5/s)+"px";
+      n.halo.setAttribute("r",r+2/s); n.halo.style.strokeWidth=(.6/s)+"px";
+      n.hit.setAttribute("r",r+3/s);
+      n.lab.setAttribute("x",right? p[0]+r+2/s : p[0]-r-2/s); n.lab.setAttribute("y",p[1]+1/s);
+      n.lab.setAttribute("text-anchor",right?"start":"end"); n.lab.style.fontSize=(3/s)+"px"; n.lab.style.strokeWidth=(.8/s)+"px";
+    });
+  }
+  function zoomFor(k){ return k<0?1:Math.max(1,Math.min(4.2,40/(nodes[k].dist+7.5))) }
+
+  // chips (mesma escolha, acessível por teclado e no celular)
+  var chips=document.getElementById("chips");
+  DIMS.forEach(function(d,k){
+    var b=document.createElement("button"); b.type="button"; b.textContent=d.n; b.style.setProperty("--c","var("+d.c+")");
+    if(d.on) b.style.setProperty("--on",d.on);
+    b.addEventListener("click",function(){select(k,true)}); chips.appendChild(b);
+  });
+
+  var panel=document.getElementById("panel"), cur=null;
+  function swapPanel(){ panel.classList.remove("swap"); void panel.offsetWidth; panel.classList.add("swap") }
+  // a cada dimensão a câmera gira um pouco além de se afastar, como no vídeo: dá a sensação de percorrer a espiral
+  function camTo(k,forward){
+    var s=zoomFor(k), rot=k<0?0:-(k+1)*38;
+    // da Aprendizagem para a espiral inteira, a câmera completa a volta no mesmo sentido (até -360°) e só depois zera, sem animação
+    if(k<0 && forward){ rot=-360; cam.addEventListener("transitionend",function f(){ cam.removeEventListener("transitionend",f); cam.style.transition="none"; cam.style.transform="rotate(0deg) scale(1)"; void cam.offsetWidth; cam.style.transition="" }) }
+    cam.style.transform="rotate("+rot+"deg) scale("+s+")"; box.classList.toggle("zoom",k>=0);
+    nodes.forEach(function(n,j){ n.g.classList.toggle("off",k>=0&&j>k); n.g.classList.toggle("on",j===k) });
+    sizeNodes(s,k,rot);
+  }
+  // visão geral: a espiral inteira com as 7 dimensões (como no fim do vídeo)
+  function overview(scroll){
+    if(cur===-1) return; var fromLast=(cur===6); cur=-1; camTo(-1,fromLast);
+    Array.prototype.forEach.call(chips.children,function(b){b.setAttribute("aria-pressed","false")});
+    panel.style.setProperty("--c","var(--teal)");
+    panel.innerHTML='<span class="n">The 7 dimensions</span><ul class="lista7">'+DIMS.map(function(d,k){return '<li><button type="button" data-k="'+k+'" style="--c:var('+d.c+')">'+d.n+'</button></li>'}).join("")+'</ul>'+
+      '<p class="txt">Click a dimension, on the spiral or in the list, to dive into it. The spiral opens out from the Individual, at the center. On a keyboard, use the ← and → arrows.</p>'+
+      '<div class="nav2"><span></span><button type="button" data-k="0">Start with the Individual →</button></div>';
+    swapPanel();
+    panel.querySelectorAll("[data-k]").forEach(function(b){b.addEventListener("click",function(){select(+b.dataset.k,true)})});
+  }
+  function select(k,scroll){
+    if(k===cur) return; cur=k; var d=DIMS[k];
+    camTo(k);
+    Array.prototype.forEach.call(chips.children,function(b,j){b.setAttribute("aria-pressed",j===k)});
+    panel.style.setProperty("--c","var("+d.c+")");
+    panel.innerHTML='<span class="n">Dimension '+(k+1)+' of 7</span><h2><i aria-hidden="true"></i>'+d.n+'</h2><div class="txt">'+d.t.map(function(x){return "<p>"+x+"</p>"}).join("")+'</div><p class="q">'+d.q+'</p>'+
+      '<div class="nav2"><button type="button" data-k="'+(k-1)+'">'+(k===0?"← Whole spiral":"← Previous")+'</button><button type="button" data-k="'+(k===6?-1:k+1)+'">'+(k===6?"Whole spiral →":"Next →")+'</button></div>';
+    swapPanel();
+    panel.querySelectorAll(".nav2 button").forEach(function(b){b.addEventListener("click",function(){var j=+b.dataset.k; if(j<0) overview(true); else select(j,true)})});
+    if(scroll && innerWidth<=860){ box.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"}) }
+  }
+
+  // abertura: o símbolo da MIRÁ gira e se transforma na espiral; depois as bolinhas acendem do centro para fora
+  var drawn=false;
+  function draw(){
+    if(drawn) return; drawn=true;
+    if(reduce){ nodes.forEach(function(n){n.g.style.opacity=1}); return }
+    var ease="cubic-bezier(.6,0,.25,1)";
+    simb.animate([{opacity:1,transform:"rotate(0) scale(1)"},{opacity:1,transform:"rotate(0) scale(1)",offset:.3},{opacity:0,transform:"rotate(200deg) scale(.15)"}],{duration:1800,easing:ease,fill:"forwards"});
+    art.animate([{opacity:0,transform:"rotate(-220deg) scale(.15)"},{opacity:0,transform:"rotate(-220deg) scale(.15)",offset:.35},{opacity:1,transform:"rotate(0) scale(1)"}],{duration:1900,easing:ease,fill:"backwards"});
+    nodes.forEach(function(n,j){ setTimeout(function(){ n.g.style.opacity=1; n.dot.animate([{transform:"scale(0)"},{transform:"scale(1.4)"},{transform:"scale(1)"}],{duration:450,easing:"ease-out"}) },1900+j*220) });
+  }
+  overview(false);
+  // setas do teclado: ← e → percorrem as dimensões enquanto a página Design de Organizações está aberta
+  document.addEventListener("keydown",function(e){
+    if(views.design.hidden) return;
+    var t=e.target.tagName; if(t==="INPUT"||t==="TEXTAREA") return;
+    if(e.key==="ArrowRight"){ e.preventDefault(); if(cur===-1) select(0,false); else if(cur<6) select(cur+1,false); else overview(false) }
+    if(e.key==="ArrowLeft"){ e.preventDefault(); if(cur>0) select(cur-1,false); else if(cur===0) overview(false); else select(6,false) }
+  });
+
+  // nuvem de inspirações
+  var cloud=document.getElementById("cloud");
+  INSP.forEach(function(s){var e=document.createElement("span"); e.textContent=s; cloud.appendChild(e)});
+
+  /* essência: abre a coluna sob o mouse ou com foco do teclado */
+  var ess=document.getElementById("ess");
+  Array.prototype.forEach.call(ess.children,function(a){
+    function open(){ Array.prototype.forEach.call(ess.children,function(b){b.classList.toggle("on",b===a)}) }
+    a.addEventListener("mouseenter",open); a.addEventListener("focus",open);
+  });
+
+  /* depoimentos: carrossel */
+  var DEPOS=[
+    ["I leave with a full heart and a transformed mind. It was a day of learning, exchange and overcoming.","Participant at a MIRÁ-facilitated event"],
+    ["What I take away as most meaningful is the collective planning and the chance to integrate. Building together strengthens the work and expands the results.","MIRÁ consulting participant"],
+    ["Taking part in a collective construction is watching how each person's contribution adds up to a much richer result.","Participant at a MIRÁ-facilitated event"],
+    ["I ended the week with many ideas that I'm sure will improve our work. I could see the gaps and the overloads in how roles are distributed.","MIRÁ consulting participant"],
+    ["We were never bored for a moment, and the content and methodology worked really well. Congratulations!","Participant at a MIRÁ-facilitated event"],
+    ["We managed to do everything we had planned and left with very good, achievable and relevant results.","MIRÁ consulting participant"],
+    ["The event was excellent, very well organized and creative. It covered several topics within the theme and made room for a diversity of agendas.","Participant at a MIRÁ-facilitated event"],
+    ["Building the purpose was very thought-provoking, and I was happy with the collective construction.","MIRÁ consulting participant"],
+    ["The care with time management was a very positive point, along with the app that organizes everything, including the material we can access later.","Participant at a MIRÁ-facilitated event"],
+    ["Many ideas, innovations, possibilities for change, insights, an opening of the mind.","MIRÁ consulting participant"]
+  ];
+  var dTrack=document.getElementById("depoTrack"), dDots=document.getElementById("depoDots"), dCur=0, dTimer;
+  DEPOS.forEach(function(d,i){
+    var b=document.createElement("blockquote"); b.innerHTML=d[0]+'<cite>'+d[1]+'</cite>'; dTrack.appendChild(b);
+    var o=document.createElement("button"); o.type="button"; o.setAttribute("role","tab"); o.setAttribute("aria-label","Testimonial "+(i+1)); o.addEventListener("click",function(){showDepo(i,true)}); dDots.appendChild(o);
+  });
+  function showDepo(i,manual){
+    dCur=(i+DEPOS.length)%DEPOS.length;
+    Array.prototype.forEach.call(dTrack.children,function(b,j){b.classList.toggle("on",j===dCur)});
+    Array.prototype.forEach.call(dDots.children,function(o,j){o.setAttribute("aria-selected",j===dCur)});
+    if(manual) armDepo();
+  }
+  function armDepo(){ clearInterval(dTimer); if(!reduce) dTimer=setInterval(function(){showDepo(dCur+1)},7000) }
+  document.getElementById("depoPrev").addEventListener("click",function(){showDepo(dCur-1,true)});
+  document.getElementById("depoNext").addEventListener("click",function(){showDepo(dCur+1,true)});
+  var depoBox=document.getElementById("depo");
+  depoBox.addEventListener("mouseenter",function(){clearInterval(dTimer)}); depoBox.addEventListener("mouseleave",armDepo);
+  showDepo(0); armDepo();
+
+  /* logos: filtro por setor */
+  var setores=document.getElementById("setores"), logos=document.querySelectorAll("#logoRow img"), vazio=document.getElementById("logoVazio");
+  setores.addEventListener("click",function(e){
+    var b=e.target.closest("button"); if(!b) return; var s=b.dataset.s, n=0;
+    setores.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});
+    logos.forEach(function(img){ var show=s==="todos"||img.dataset.s===s; img.hidden=!show; if(show){n++; img.style.animation="none"; void img.offsetWidth; img.style.animation=""} });
+    vazio.hidden=n>0;
+  });
+
+  /* ---------- navegação entre páginas ---------- */
+  var views={};
+  ["inicio","design","a-mira","consultoria","facilitacao","capacitacao","portfolio","contato"].forEach(function(k){views[k]=document.getElementById("v-"+k)});
+  var nav=document.getElementById("nav"), menuBtn=document.getElementById("menuBtn");
+  function go(id,push){
+    if(!views[id]) id="inicio";
+    Object.keys(views).forEach(function(k){views[k].hidden=(k!==id)});
+    nav.querySelectorAll("a").forEach(function(a){ if(a.dataset.go===id) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current") });
+    nav.classList.remove("open"); menuBtn.setAttribute("aria-expanded","false");
+    if(push!==false){ try{history.replaceState(null,"","#"+id)}catch(e){} scrollTo({top:0,behavior:"auto"}) }
+    if(id==="design") requestAnimationFrame(draw);
+  }
+  /* portfólio: mesmos logos e filtros da Home */
+  document.getElementById("logoRow2").innerHTML=document.getElementById("logoRow").innerHTML;
+  document.getElementById("setores2").innerHTML=setores.innerHTML;
+  var logos2=document.querySelectorAll("#logoRow2 img"), setores2=document.getElementById("setores2"), vazio2=document.querySelector("#logoRow2 .vazio");
+  setores2.addEventListener("click",function(e){
+    var b=e.target.closest("button"); if(!b) return; var s=b.dataset.s, n=0;
+    setores2.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});
+    logos2.forEach(function(img){ var show=s==="todos"||img.dataset.s===s; img.hidden=!show; if(show) n++ });
+    vazio2.hidden=n>0;
+  });
+  /* contato: redes iguais às do rodapé; formulário só confirma (o envio real entra com o Formspree) */
+  document.getElementById("redes2").innerHTML=document.querySelector("footer .redes").innerHTML;
+  var form=document.getElementById("form"), FORMSPREE=form.getAttribute("action");
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){ form.reportValidity(); return }
+    var ok=document.getElementById("formOk"), err=document.getElementById("formErr"), btn=form.querySelector('button[type=submit]');
+    ok.hidden=true; err.hidden=true;
+    if(FORMSPREE.indexOf("FORMSPREE_ID")>=0){ ok.hidden=false; form.reset(); return } // sem o ID do Formspree, só confirma na tela (protótipo)
+    btn.disabled=true;
+    fetch(FORMSPREE,{method:"POST",body:new FormData(form),headers:{"Accept":"application/json"}})
+      .then(function(r){ if(!r.ok) throw 0; ok.hidden=false; form.reset() })
+      .catch(function(){ err.hidden=false })
+      .finally(function(){ btn.disabled=false });
+  });
+  document.addEventListener("click",function(e){
+    var a=e.target.closest("[data-go]"); if(!a) return; e.preventDefault(); go(a.dataset.go);
+  });
+  menuBtn.addEventListener("click",function(){var o=nav.classList.toggle("open"); menuBtn.setAttribute("aria-expanded",o)});
+  // troca de idioma mantendo a página aberta (o #hash)
+  document.getElementById("langLink").addEventListener("click",function(e){ e.preventDefault(); location.href=this.getAttribute("href")+location.hash });
+  var start=(location.hash||"").replace("#","");
+  go(views[start]?start:"inicio",false);
+})();
+</script>
+
+</body>
+</html>
