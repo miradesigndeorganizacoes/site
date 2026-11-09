@@ -343,6 +343,28 @@ footer a:hover{text-decoration:underline}
   .passos{grid-template-columns:repeat(2,1fr)}
   .nums3{grid-template-columns:1fr}
 }
+/* PRODUTOS: dois cards grandes no padrão do painel (.panel), uma prévia
+   desenhada em CSS de cada produto, etiquetas e três quadros curtos */
+.prod-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(22px,3vw,40px)}
+.prod{align-content:start;min-width:0}
+.prod .tag{font-family:var(--f-hand);font-size:15px;color:var(--teal-ink)}
+.prod h2{font-size:clamp(22px,2.4vw,28px)}
+.prod p{font-size:16px;color:var(--muted)}
+.prod .nota{margin:0;overflow-wrap:anywhere}
+.prod-shot{aspect-ratio:16/10;border-radius:16px;background:var(--soft);border:1.5px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
+.prod-shot .stripe{height:6px;flex:none}
+.prod-shot .app{display:flex;flex:1;min-height:0}
+.prod-shot .side{width:26%;background:#fff;border-right:1px solid var(--line);padding:14px 10px;display:flex;flex-direction:column;gap:7px}
+.prod-shot .main{flex:1;padding:14px;display:flex;flex-direction:column;gap:6px}
+.prod-shot i{display:block;border-radius:4px;background:var(--line);height:6px}
+.prod-shot i.ink{background:var(--ink)}
+.prod-shot i.row{height:18px;border-radius:0 6px 6px 0;background:#fff;border-left:4px solid var(--c,var(--teal))}
+.prod-shot .apps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;padding:22px;align-content:start}
+.prod-shot .apps div{display:flex;flex-direction:column;align-items:center;gap:8px}
+.prod-shot .apps span{width:54px;height:54px;border-radius:16px;border:2px solid var(--ink);background:var(--c)}
+.prod-shot .apps span.soon{border-style:dashed;border-color:#aab3b1;background:#fff}
+.prod-shot .apps i{width:60%}
+@media (max-width:860px){.prod-grid{grid-template-columns:1fr}}
 /* páginas ainda não prototipadas */
 .proto{background:var(--ink);color:#fff;font-size:12.5px;text-align:center;padding:7px 16px;font-weight:500}
 .proto b{color:var(--teal)}
@@ -368,6 +390,7 @@ footer a:hover{text-decoration:underline}
       <a href="#consultoria" data-go="consultoria">Consulting</a>
       <a href="#facilitacao" data-go="facilitacao">Facilitation</a>
       <a href="#capacitacao" data-go="capacitacao">Training</a>
+      <a href="#produtos" data-go="produtos">Products</a>
       <a href="#portfolio" data-go="portfolio">Portfolio</a>
       <a href="#contato" data-go="contato">Contact</a>
       <div class="lang" role="group" aria-label="Language"><a href="index.html" id="langLink" hreflang="pt-BR" lang="pt-BR">PT</a><a href="en.html" aria-current="true" hreflang="en" lang="en">EN</a></div>
@@ -905,6 +928,46 @@ footer a:hover{text-decoration:underline}
     </div>
   </div></section>
 </div>
+<div class="view" id="v-produtos" hidden>
+  <section class="do-hero">
+    <div class="wrap">
+      <span class="eyebrow">Products</span>
+      <h1>What we use in our workshops, now <span class="hand">in your hands.</span></h1>
+      <p class="lead">Over twenty years of events we built our own tools. Two of them have become products: one to organize the whole event, and a set to use during the workshop itself.</p>
+    </div>
+  </section>
+
+  <section class="produtos" style="padding-top:0"><div class="wrap">
+    <div class="prod-grid">
+      <article class="panel prod" style="--c:var(--teal)">
+        <div class="prod-shot" aria-hidden="true"><div class="stripe" style="display:grid;grid-template-columns:repeat(7,1fr)"><i style="background:var(--d1);height:6px;border-radius:0"></i><i style="background:var(--d2);height:6px;border-radius:0"></i><i style="background:var(--d3);height:6px;border-radius:0"></i><i style="background:var(--d4);height:6px;border-radius:0"></i><i style="background:var(--d5);height:6px;border-radius:0"></i><i style="background:var(--d6);height:6px;border-radius:0"></i><i style="background:var(--d7);height:6px;border-radius:0"></i></div><div class="app"><div class="side"><i class="ink" style="width:60%;height:8px"></i><i style="width:70%;margin-top:8px"></i><i style="width:55%"></i><i style="width:65%"></i><i class="ink" style="width:75%;height:10px;margin-top:8px"></i><i style="width:60%"></i><i style="width:70%"></i><i style="width:50%"></i></div><div class="main"><i class="ink" style="width:40%;height:8px;margin-bottom:6px"></i><i class="row" style="--c:var(--d3)"></i><i class="row" style="--c:var(--d4)"></i><i class="row" style="--c:#aab3b1"></i><i class="row" style="--c:var(--d6)"></i><i class="row" style="--c:var(--d4)"></i></div></div></div>
+        <span class="tag">to organize</span>
+        <h2>Event Planner</h2>
+        <p>From briefing to report, in one place: the program and its logical thread, materials, participant registration and check-in, facilitation slides, live polls and boards, and the Participant Guide on everyone's phone.</p>
+        <div class="cases"><ul><li>Logical thread</li><li>Participant Guide</li><li>Live polls and boards</li><li>Post-event report</li></ul></div>
+        <div class="btns"><a class="btn solid arrow" href="https://eventos.miradesigndeorganizacoes.com.br" target="_blank" rel="noopener">Open the Event Planner </a><a class="btn ghost" href="#contato" data-go="contato">How it works</a></div>
+        <p class="nota">eventos.miradesigndeorganizacoes.com.br · for the MIRÁ team and the people invited to each event</p>
+      </article>
+      <article class="panel prod" style="--c:var(--d2)">
+        <div class="prod-shot" aria-hidden="true"><div class="apps"><div><span style="--c:var(--d3)"></span><i class="ink"></i></div><div><span style="--c:var(--d2)"></span><i class="ink"></i></div><div><span style="--c:var(--d4)"></span><i class="ink"></i></div><div><span style="--c:var(--d6)"></span><i class="ink"></i></div><div><span style="--c:var(--d1)"></span><i class="ink"></i></div><div><span style="--c:var(--d5)"></span><i class="ink"></i></div><div><span style="--c:var(--d7)"></span><i class="ink"></i></div><div><span class="soon"></span><i></i></div></div></div>
+        <span class="tag">to use in the workshop</span>
+        <h2>MIRÁ Tools</h2>
+        <p>Instruments for the workshop moment, on the group's computer or on each participant's phone: foresight and scenarios, SWOT, prioritization matrices, and whatever else we keep refining in the next workshops.</p>
+        <div class="cases"><ul><li>Designing Futures</li><li>SWOT</li><li>7 dimensions</li><li style="border-style:dashed;background:#fff;color:var(--muted)">coming soon: more</li></ul></div>
+        <div class="btns"><a class="btn solid arrow" href="ferramentas.html">Open the tools </a></div>
+        <p class="nota">miradesigndeorganizacoes.com.br/ferramentas.html · open, no login, made for projecting and for the phone</p>
+      </article>
+    </div>
+  </div></section>
+
+  <section class="porque" style="background:var(--soft)"><div class="wrap">
+    <div class="ess-grid">
+      <article class="ess-full" style="--c:var(--d1)"><h3>Made in practice</h3><p>None of them was born on paper: each came out of a real workshop, with real people in the room, and was tuned event after event.</p></article>
+      <article class="ess-full" style="--c:var(--d3)"><h3>In your event's colors</h3><p>The event's logo, colors and fonts go into the Guide, the slides, the badges and the posters. MIRÁ's brand stays discreet, in the footer.</p></article>
+      <article class="ess-full" style="--c:var(--d6)"><h3>Who they are for</h3><p>Today they are used by our team and by the organizations that work with MIRÁ. Want them at your event? <a href="#contato" data-go="contato">Talk to us</a>.</p></article>
+    </div>
+  </div></section>
+</div>
 <div class="view" id="v-contato" hidden>
   <section class="do-hero">
     <div class="wrap">
@@ -956,6 +1019,7 @@ footer a:hover{text-decoration:underline}
       <ul>
         <li class="copy">contato@miradesigndeorganizacoes.com.br</li>
         <li><span class="copy">(61) 99826-0865</span> · <a href="https://wa.me/message/ZYFZI7XEE7NVP1" target="_blank" rel="noopener" style="color:var(--teal)">WhatsApp</a></li>
+        <li><a href="#produtos" data-go="produtos">Products: Event Planner and MIRÁ Tools</a></li>
       </ul>
     </div>
     <div>
@@ -1138,7 +1202,7 @@ footer a:hover{text-decoration:underline}
 
   /* ---------- navegação entre páginas ---------- */
   var views={};
-  ["inicio","design","a-mira","consultoria","facilitacao","capacitacao","portfolio","contato"].forEach(function(k){views[k]=document.getElementById("v-"+k)});
+  ["inicio","design","a-mira","consultoria","facilitacao","capacitacao","portfolio","produtos","contato"].forEach(function(k){views[k]=document.getElementById("v-"+k)});
   var nav=document.getElementById("nav"), menuBtn=document.getElementById("menuBtn");
   function go(id,push){
     if(!views[id]) id="inicio";
